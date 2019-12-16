@@ -1,4 +1,5 @@
 <!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Disqus comments</title></head><body><div id=disqus_thread></div><script>window.addEventListener('message',receiveMessage,false);function receiveMessage(event)
-{if(event.data){var msg;try{msg=JSON.parse(event.data);}catch(err){}
+{console.log(event.origin);if(event.data){var msg;try{msg=JSON.parse(event.data);}catch(err){}
 if(!msg)
-return false;if(msg.name==='resize'||msg.name==='rendered'){window.parent.postMessage({sentinel:'amp',type:'embed-size',height:msg.data.height},'*');}}}</script><script>var disqus_config=function(){this.page.url=window.location;this.page.identifier=window.location.hash;};(function(){var d=document,s=d.createElement('script');s.src='https://asurbernardo.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script></body></html>
+return false;if(msg.name==='resize'||msg.name==='rendered'){console.log('Resizing',msg.data.height)
+window.parent.postMessage({sentinel:'amp',type:'embed-size',height:msg.data.height},'*');}}}</script><script>var disqus_config=function(){this.page.url=window.location;this.page.identifier=window.location.hash;};(function(){var d=document,s=d.createElement('script');s.src='https://asurbernardo.disqus.com/embed.js';s.setAttribute('data-timestamp',+new Date());(d.head||d.body).appendChild(s);})();</script></body></html>

@@ -1,4 +1,11 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Disqus comments</title></head><body><div id="disqus_thread"/><script>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Disqus comments</title></head><body>
+---
+sitemap: false
+---<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Disqus</title><meta name="viewport" content="width=device-width,minimum-scale=1"><meta name="robots" content="noindex"/><style>
+html, body {
+margin: 0;
+padding: 0;
+}</style></head><body><div id="disqus_thread"/><script>
 window.addEventListener('message', receiveMessage, false);
 function receiveMessage(event)
 {
@@ -30,4 +37,4 @@ var d = document, s = d.createElement('script');
 s.src = 'https://asurbernardo.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
-})();</script></body></html>
+})();</script></body></html></body></html>

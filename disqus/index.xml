@@ -11,9 +11,10 @@ msg = JSON.parse(event.data);
 if (!msg)
 return false;
 if (msg.name === 'resize' || msg.name === 'rendered') {
-console.log(event.source)
+console.log('Origin', event.origin);
+console.log('Source', event.source);
 console.log('Message', msg);
-console.log('Resizing', document.body.scrollHeight)
+console.log('Size', document.body.scrollHeight);
 window.parent.postMessage({
 sentinel: 'amp',
 type: 'embed-size',

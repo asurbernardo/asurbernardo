@@ -29,13 +29,13 @@ por Asur Bernardo<ul id=tags><li>Tags:</li> <li><a data-rel=prefetch href=https
 </span><span class=lnt> 9
 </span><span class=lnt>10
 </span><span class=lnt>11
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-scss data-lang=scss><span class=nc>.</span><span class=nc>pagination</span> <span class=p>{</span>
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-scss data-lang=scss><span class=nc>.pagination</span> <span class=p>{</span>
   <span class=nt>margin</span><span class=nd>:</span> <span class=nt>2em</span> <span class=nt>auto</span><span class=p>;</span>
   <span class=nt>display</span><span class=nd>:</span> <span class=nt>flex</span><span class=p>;</span>
   <span class=nt>justify-content</span><span class=nd>:</span> <span class=nt>space-between</span><span class=p>;</span>
   <span class=nt>a</span> <span class=p>{</span>
     <span class=nt>border-bottom</span><span class=nd>:</span> <span class=nt>none</span><span class=p>;</span>
-    <span class=k>&amp;</span><span class=nd>:</span><span class=nd>hover</span> <span class=p>{</span>
+    <span class=k>&amp;</span><span class=nd>:hover</span> <span class=p>{</span>
       <span class=nt>color</span><span class=nd>:</span> <span class=err>$</span><span class=nt>main-color</span><span class=p>;</span>
     <span class=p>}</span>
   <span class=p>}</span>
@@ -115,18 +115,18 @@ por Asur Bernardo<ul id=tags><li>Tags:</li> <li><a data-rel=prefetch href=https
 </span><span class=lnt>10
 </span><span class=lnt>11
 </span><span class=lnt>12
-</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-toml data-lang=toml><span class=p>[</span><span class=p>[</span><span class=nx>menu</span><span class=p>.</span><span class=nx>main</span><span class=p>]</span><span class=p>]</span>
+</span></code></pre></td><td class=lntd><pre class=chroma><code class=language-toml data-lang=toml><span class=p>[[</span><span class=nx>menu</span><span class=p>.</span><span class=nx>main</span><span class=p>]]</span>
   <span class=nx>identifier</span> <span class=p>=</span> <span class=s2>&#34;linkedin&#34;</span>
   <span class=nx>name</span> <span class=p>=</span> <span class=s2>&#34;LinkedIn&#34;</span>
   <span class=nx>url</span> <span class=p>=</span> <span class=s2>&#34;https://www.linkedin.com/in/asur-bernardo/&#34;</span>
   <span class=nx>weight</span> <span class=p>=</span> <span class=mi>10</span>
-<span class=p>[</span><span class=p>[</span><span class=nx>menu</span><span class=p>.</span><span class=nx>main</span><span class=p>]</span><span class=p>]</span>
+<span class=p>[[</span><span class=nx>menu</span><span class=p>.</span><span class=nx>main</span><span class=p>]]</span>
   <span class=nx>identifier</span> <span class=p>=</span> <span class=s2>&#34;twitter&#34;</span>
   <span class=nx>name</span> <span class=p>=</span> <span class=s2>&#34;Twitter&#34;</span>
   <span class=nx>url</span> <span class=p>=</span> <span class=s2>&#34;https://twitter.com/asurbernardo&#34;</span>
   <span class=nx>weight</span> <span class=p>=</span> <span class=mi>10</span>
 
-<span class=p>[</span><span class=p>.</span><span class=p>.</span><span class=p>.</span><span class=p>]</span></code></pre></td></tr></tbody></table></div></div><p>Esta configuración se bindea a la variable <code>.Site</code> en <em>build time</em> y podemos acceder a ella para imprimirla:</p><div class=highlight><div class=chroma><table class=lntable><tbody><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
+<span class=p>[...]</span></code></pre></td></tr></tbody></table></div></div><p>Esta configuración se bindea a la variable <code>.Site</code> en <em>build time</em> y podemos acceder a ella para imprimirla:</p><div class=highlight><div class=chroma><table class=lntable><tbody><tr><td class=lntd><pre class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4

@@ -1,1 +1,78 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://asur.dev/en/</loc><lastmod>2020-01-11T14:12:32+02:00</lastmod></url><url><loc>https://asur.dev/en/tutorials/how-to-deploy-your-own-crypto-trading-bot/</loc><lastmod>2020-01-11T14:12:32+02:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>https://asur.dev/en/tags/</loc><lastmod>2020-01-11T14:12:32+02:00</lastmod></url><url><loc>https://asur.dev/en/tags/tutorial/</loc><lastmod>2020-01-11T14:12:32+02:00</lastmod></url><url><loc>https://asur.dev/en/tutorials/</loc><lastmod>2020-01-11T14:12:32+02:00</lastmod></url><url><loc>https://asur.dev/en/tags/amperage/</loc><lastmod>2019-12-11T15:47:05+02:00</lastmod></url><url><loc>https://asur.dev/en/amperage/theme-kitchen-sink/</loc><lastmod>2019-12-11T15:47:05+02:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>https://asur.dev/en/amperage/</loc><lastmod>2019-12-11T15:47:05+02:00</lastmod></url><url><loc>https://asur.dev/en/finances/</loc><lastmod>2019-12-05T17:24:05+02:00</lastmod></url><url><loc>https://asur.dev/en/tags/monetization/</loc><lastmod>2019-12-05T17:24:05+02:00</lastmod></url><url><loc>https://asur.dev/en/finances/top-3-ways-i-monetize-my-tech-blog-no-traffic-required/</loc><lastmod>2019-12-05T17:24:05+02:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>https://asur.dev/en/tutorials/how-to-share-your-local-on-the-internet-with-ngrok/</loc><lastmod>2019-11-14T21:08:32+02:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url><url><loc>https://asur.dev/en/support/</loc><lastmod>0001-01-01T00:00:00+00:00</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <url>
+        <loc>https://asur.dev/en/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/tutorials/how-to-deploy-your-own-crypto-trading-bot/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/tags/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/tags/tutorial/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/tutorials/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/tags/amperage/</loc>
+        <lastmod>2019-12-11T15:47:05+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/amperage/theme-kitchen-sink/</loc>
+        <lastmod>2019-12-11T15:47:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/amperage/</loc>
+        <lastmod>2019-12-11T15:47:05+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/finances/</loc>
+        <lastmod>2019-12-05T17:24:05+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/tags/monetization/</loc>
+        <lastmod>2019-12-05T17:24:05+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/finances/top-3-ways-i-monetize-my-tech-blog-no-traffic-required/</loc>
+        <lastmod>2019-12-05T17:24:05+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/tutorials/how-to-share-your-local-on-the-internet-with-ngrok/</loc>
+        <lastmod>2019-11-14T21:08:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/en/support/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+</urlset>

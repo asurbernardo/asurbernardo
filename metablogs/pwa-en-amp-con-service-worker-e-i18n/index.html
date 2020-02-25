@@ -267,8 +267,8 @@
 <pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>amp-install-serviceworker</span>
   <span class=na>src</span><span class=o>=</span><span class=s>&#34;https://asur.dev/sw.js&#34;</span>
   <span class=na>data-iframe-src</span><span class=o>=</span><span class=s>&#34;https://asur.dev/install-sw.html&#34;</span>
-  <span class=na>layout</span><span class=o>=</span><span class=s>&#34;nodisplay&#34;</span><span class=p>&gt;</span>
-<span class=p>&lt;/</span><span class=nt>amp-install-serviceworker</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
+  <span class=na>layout</span><span class=o>=</span><span class=s>&#34;nodisplay&#34;</span><span class=p></span><span class=p>&gt;</span>
+<span class=p>&lt;</span><span class=p>/</span><span class=nt>amp-install-serviceworker</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 
@@ -307,19 +307,19 @@
 </span><span class=lnt>13
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-javascript data-lang=javascript><span class=nx>importScripts</span><span class=p>(</span><span class=s1>&#39;https://cdn.ampproject.org/sw/amp-sw.js&#39;</span><span class=p>);</span>
+<pre class=chroma><code class=language-javascript data-lang=javascript><span class=nx>importScripts</span><span class=p>(</span><span class=s1>&#39;https://cdn.ampproject.org/sw/amp-sw.js&#39;</span><span class=p>)</span><span class=p>;</span>
 
-<span class=nx>AMP_SW</span><span class=p>.</span><span class=nx>init</span><span class=p>({</span>
-  <span class=nx>assetCachingOptions</span><span class=o>:</span> <span class=p>[{</span>
+<span class=nx>AMP_SW</span><span class=p>.</span><span class=nx>init</span><span class=p>(</span><span class=p>{</span>
+  <span class=nx>assetCachingOptions</span><span class=o>:</span> <span class=p>[</span><span class=p>{</span>
     <span class=nx>regexp</span><span class=o>:</span> <span class=sr>/\.(png|jpg|woff2|woff|css|js)/</span><span class=p>,</span>
     <span class=nx>cachingStrategy</span><span class=o>:</span> <span class=s1>&#39;CACHE_FIRST&#39;</span><span class=p>,</span>
-  <span class=p>}],</span>
+  <span class=p>}</span><span class=p>]</span><span class=p>,</span>
   <span class=nx>offlinePageOptions</span><span class=o>:</span> <span class=p>{</span>
     <span class=nx>url</span><span class=o>:</span> <span class=s1>&#39;/offline.html&#39;</span><span class=p>,</span>
-    <span class=nx>assets</span><span class=o>:</span> <span class=p>[],</span>
-  <span class=p>},</span>
-  <span class=nx>linkPrefetchOptions</span><span class=o>:</span> <span class=p>{}</span>
-<span class=p>});</span>
+    <span class=nx>assets</span><span class=o>:</span> <span class=p>[</span><span class=p>]</span><span class=p>,</span>
+  <span class=p>}</span><span class=p>,</span>
+  <span class=nx>linkPrefetchOptions</span><span class=o>:</span> <span class=p>{</span><span class=p>}</span>
+<span class=p>}</span><span class=p>)</span><span class=p>;</span>
 </code></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -384,15 +384,15 @@
   <span class=nt>&#34;theme_color&#34;</span><span class=p>:</span> <span class=s2>&#34;#ef8b80&#34;</span><span class=p>,</span>
   <span class=nt>&#34;description&#34;</span><span class=p>:</span> <span class=s2>&#34;Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source
 </span><span class=s2>    y la tecnología en general echa un vistazo, seguro que encuentras algo interesante.&#34;</span><span class=p>,</span>
-  <span class=nt>&#34;icons&#34;</span><span class=p>:[{</span>
+  <span class=nt>&#34;icons&#34;</span><span class=p>:</span><span class=p>[</span><span class=p>{</span>
       <span class=nt>&#34;src&#34;</span><span class=p>:</span><span class=s2>&#34;/icons/android-chrome-192x192.png&#34;</span><span class=p>,</span>
       <span class=nt>&#34;sizes&#34;</span><span class=p>:</span><span class=s2>&#34;192x192&#34;</span><span class=p>,</span>
       <span class=nt>&#34;type&#34;</span><span class=p>:</span><span class=s2>&#34;image/png&#34;</span>
-    <span class=p>},{</span>
+    <span class=p>}</span><span class=p>,</span><span class=p>{</span>
       <span class=nt>&#34;src&#34;</span><span class=p>:</span><span class=s2>&#34;/icons/android-chrome-512x512.png&#34;</span><span class=p>,</span>
       <span class=nt>&#34;sizes&#34;</span><span class=p>:</span><span class=s2>&#34;512x512&#34;</span><span class=p>,</span>
       <span class=nt>&#34;type&#34;</span><span class=p>:</span><span class=s2>&#34;image/png&#34;</span>
-  <span class=p>}]</span>
+  <span class=p>}</span><span class=p>]</span>
 <span class=p>}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -421,13 +421,13 @@
 </span><span class=lnt>7
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;manifest&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/manifest.json&#34;</span><span class=p>&gt;</span>
+<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;manifest&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/manifest.json&#34;</span><span class=p></span><span class=p>&gt;</span>
 <span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;icon&#34;</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;image/png&#34;</span>
-    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;32x32&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-32x32.png&#34;</span><span class=p>&gt;</span>
+    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;32x32&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-32x32.png&#34;</span><span class=p></span><span class=p>&gt;</span>
 <span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;icon&#34;</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;image/png&#34;</span>
-    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;16x16&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-16x16.png&#34;</span><span class=p>&gt;</span>
+    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;16x16&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-16x16.png&#34;</span><span class=p></span><span class=p>&gt;</span>
 <span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;apple-touch-icon&#34;</span>
-    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;180x180&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/apple-touch-icon.png&#34;</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
+    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;180x180&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/apple-touch-icon.png&#34;</span><span class=p></span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 
@@ -486,7 +486,7 @@
   <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;Go back to the homepage&#34;</span>
 <span class=p>[</span><span class=nx>by</span><span class=p>]</span>
   <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;By&#34;</span>
-<span class=p>[...]</span></code></pre></td></tr></tbody></table>
+<span class=p>[</span><span class=p>.</span><span class=p>.</span><span class=p>.</span><span class=p>]</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 

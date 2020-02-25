@@ -486,22 +486,22 @@
 <td class=lntd>
 <pre class=chroma><code class=language-yaml data-lang=yaml><span class=k>version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;3&#39;</span><span class=w>
 </span><span class=w></span><span class=k>services</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=k>web</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=k>build</span><span class=p>:</span><span class=w> </span>.<span class=w>
+</span><span class=w></span><span class=w>  </span><span class=k>web</span><span class=p>:</span><span class=w>
+</span><span class=w></span><span class=w>    </span><span class=k>build</span><span class=p>:</span><span class=w> </span>.<span class=w>
 </span><span class=w>    </span><span class=k>ports</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=s2>&#34;1313:1313&#34;</span><span class=w>
+</span><span class=w></span><span class=w>      </span>- <span class=s2>&#34;1313:1313&#34;</span><span class=w>
 </span><span class=w>    </span><span class=k>volumes</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- .<span class=p>:</span>/blog<span class=w>
-</span><span class=w>    </span><span class=k>command</span><span class=p>:</span><span class=w> </span>hugo<span class=w> </span>server<span class=w> </span>--verbose<span class=w> </span>--watch<span class=w> </span>--buildFuture<span class=w> </span>--buildDrafts<span class=w> </span>-D<span class=w> </span>--bind<span class=w> </span><span class=m>0.0.0.0</span><span class=w>
+</span><span class=w></span><span class=w>      </span>- .<span class=p>:</span>/blog<span class=w>
+</span><span class=w>    </span><span class=k>command</span><span class=p>:</span><span class=w> </span>hugo<span class=w> </span>server<span class=w> </span>--verbose<span class=w> </span>--watch<span class=w> </span>--buildFuture<span class=w> </span>--buildDrafts<span class=w> </span>-D<span class=w> </span>--bind<span class=w> </span><span class=m>0.0</span><span class=m>.0</span><span class=m>.0</span><span class=w>
 </span><span class=w>
 </span><span class=w>  </span><span class=c># 🡣 New content 🡣</span><span class=w>
 </span><span class=w>
 </span><span class=w>  </span><span class=k>localtunnel</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=k>image</span><span class=p>:</span><span class=w> </span>efrecon/localtunnel<span class=w>
+</span><span class=w></span><span class=w>    </span><span class=k>image</span><span class=p>:</span><span class=w> </span>efrecon/localtunnel<span class=w>
 </span><span class=w>    </span><span class=k>depends_on</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- web<span class=w>
+</span><span class=w></span><span class=w>      </span>- web<span class=w>
 </span><span class=w>    </span><span class=k>command</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>--local-host<span class=w> </span>web<span class=w> </span>--port<span class=w> </span><span class=m>1313</span></code></pre></td></tr></tbody></table>
+</span><span class=w></span><span class=w>      </span>--local-host<span class=w> </span>web<span class=w> </span>--port<span class=w> </span><span class=m>1313</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 

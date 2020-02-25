@@ -294,22 +294,22 @@
 <pre class=chroma><code class=language-yaml data-lang=yaml><span class=k>version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;2&#39;</span><span class=w>
 </span><span class=w>
 </span><span class=w></span><span class=k>services</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=k>remark</span><span class=p>:</span><span class=w>
-</span><span class=w>        </span><span class=k>build</span><span class=p>:</span><span class=w> </span>.<span class=w>
+</span><span class=w></span><span class=w>    </span><span class=k>remark</span><span class=p>:</span><span class=w>
+</span><span class=w></span><span class=w>        </span><span class=k>build</span><span class=p>:</span><span class=w> </span>.<span class=w>
 </span><span class=w>        </span><span class=k>image</span><span class=p>:</span><span class=w> </span>umputun/remark42<span class=p>:</span>latest<span class=w>
 </span><span class=w>        </span><span class=k>container_name</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;remark42&#34;</span><span class=w>
 </span><span class=w>        </span><span class=k>hostname</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;remark42&#34;</span><span class=w>
 </span><span class=w>        </span><span class=k>restart</span><span class=p>:</span><span class=w> </span>always<span class=w>
 </span><span class=w>        </span><span class=k>logging</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span><span class=k>driver</span><span class=p>:</span><span class=w> </span>json-file<span class=w>
+</span><span class=w></span><span class=w>          </span><span class=k>driver</span><span class=p>:</span><span class=w> </span>json-file<span class=w>
 </span><span class=w>          </span><span class=k>options</span><span class=p>:</span><span class=w>
-</span><span class=w>              </span><span class=k>max-size</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;10m&#34;</span><span class=w>
+</span><span class=w></span><span class=w>              </span><span class=k>max-size</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;10m&#34;</span><span class=w>
 </span><span class=w>              </span><span class=k>max-file</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;5&#34;</span><span class=w>
 </span><span class=w>        </span><span class=k>ports</span><span class=p>:</span><span class=w>
-</span><span class=w>          </span>- <span class=s2>&#34;80:8080&#34;</span><span class=w>
+</span><span class=w></span><span class=w>          </span>- <span class=s2>&#34;80:8080&#34;</span><span class=w>
 </span><span class=w>        </span><span class=k>environment</span><span class=p>:</span><span class=w>
-</span><span class=w>            </span>- REMARK_URL=https<span class=p>:</span>//remark.asur.dev<span class=w>
-</span><span class=w>            </span>- SECRET=<span class=p>??</span>?
+</span><span class=w></span><span class=w>            </span>- REMARK_URL=https<span class=p>:</span>//remark.asur.dev<span class=w>
+</span><span class=w>            </span>- SECRET=<span class=p>?</span><span class=p>?</span>?
             - AUTH_ANON=<span class=kc>true</span><span class=w>
 </span><span class=w>            </span>- EMOJI=<span class=kc>true</span><span class=w>
 </span><span class=w>            </span>- SITE=asur.dev<span class=w>
@@ -317,10 +317,10 @@
 </span><span class=w>            </span>- BACKUP_PATH=/srv/var/backup<span class=w>
 </span><span class=w>            </span>- DEBUG=<span class=kc>true</span><span class=w>
 </span><span class=w>            </span>- AUTH_GITHUB_CID=71e8bdd80db99d4ee55e<span class=w>
-</span><span class=w>            </span>- AUTH_GITHUB_CSEC=<span class=p>??</span>?
-            - ADMIN_PASSWD=<span class=p>???</span><span class=w>
+</span><span class=w>            </span>- AUTH_GITHUB_CSEC=<span class=p>?</span><span class=p>?</span>?
+            - ADMIN_PASSWD=<span class=p>?</span><span class=p>?</span><span class=p>?</span><span class=w>
 </span><span class=w>        </span><span class=k>volumes</span><span class=p>:</span><span class=w>
-</span><span class=w>            </span>- ./var<span class=p>:</span>/srv/var</code></pre></td></tr></tbody></table>
+</span><span class=w></span><span class=w>            </span>- ./var<span class=p>:</span>/srv/var</code></pre></td></tr></tbody></table>
 </div>
 </div>
 
@@ -351,9 +351,9 @@
     <span class=na>sandbox</span><span class=o>=</span><span class=s>&#34;allow-scripts allow-same-origin allow-forms allow-popups&#34;</span>
     <span class=na>layout</span><span class=o>=</span><span class=s>&#34;responsive&#34;</span>
     <span class=na>frameborder</span><span class=o>=</span><span class=s>&#34;0&#34;</span>
-    <span class=na>src</span><span class=o>=</span><span class=s>&#34;https://comments.asur.dev&#34;</span><span class=p>&gt;</span>
-<span class=p>&lt;</span><span class=nt>div</span> <span class=na>overflow</span> <span class=na>tabindex</span><span class=o>=</span><span class=s>&#34;0&#34;</span><span class=p>&gt;&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
-<span class=p>&lt;/</span><span class=nt>amp-iframe</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
+    <span class=na>src</span><span class=o>=</span><span class=s>&#34;https://comments.asur.dev&#34;</span><span class=p></span><span class=p>&gt;</span>
+<span class=p>&lt;</span><span class=nt>div</span> <span class=na>overflow</span> <span class=na>tabindex</span><span class=o>=</span><span class=s>&#34;0&#34;</span><span class=p></span><span class=p>&gt;</span><span class=p>&lt;</span><span class=p>/</span><span class=nt>div</span><span class=p>&gt;</span>
+<span class=p>&lt;</span><span class=p>/</span><span class=nt>amp-iframe</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 
@@ -368,11 +368,11 @@
 </span><span class=lnt>5
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-javascript data-lang=javascript><span class=nb>window</span><span class=p>.</span><span class=nx>parent</span><span class=p>.</span><span class=nx>postMessage</span><span class=p>({</span>
+<pre class=chroma><code class=language-javascript data-lang=javascript><span class=nb>window</span><span class=p>.</span><span class=nx>parent</span><span class=p>.</span><span class=nx>postMessage</span><span class=p>(</span><span class=p>{</span>
     <span class=nx>sentinel</span><span class=o>:</span> <span class=s1>&#39;amp&#39;</span><span class=p>,</span>
     <span class=nx>type</span><span class=o>:</span> <span class=s1>&#39;embed-size&#39;</span><span class=p>,</span>
     <span class=nx>height</span><span class=o>:</span> <span class=nb>document</span><span class=p>.</span><span class=nx>body</span><span class=p>.</span><span class=nx>scrollHeight</span>
-  <span class=p>},</span> <span class=s1>&#39;*&#39;</span><span class=p>);</span>
+  <span class=p>}</span><span class=p>,</span> <span class=s1>&#39;*&#39;</span><span class=p>)</span><span class=p>;</span>
 </code></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -490,7 +490,7 @@
         <span class=s2>&#34;@id&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/&#34;</span><span class=p>,</span>
         <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Inicio&#34;</span>
       <span class=p>}</span>
-    <span class=p>},</span>
+    <span class=p>}</span><span class=p>,</span>
     <span class=p>{</span>
       <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;ListItem&#34;</span><span class=p>,</span>
       <span class=s2>&#34;position&#34;</span><span class=o>:</span>  <span class=mi>2</span> <span class=p>,</span>
@@ -498,7 +498,7 @@
         <span class=s2>&#34;@id&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/metablogs/&#34;</span><span class=p>,</span>
         <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Metablogs&#34;</span>
       <span class=p>}</span>
-    <span class=p>},</span>
+    <span class=p>}</span><span class=p>,</span>
     <span class=p>{</span>
       <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;ListItem&#34;</span><span class=p>,</span>
       <span class=s2>&#34;position&#34;</span><span class=o>:</span>  <span class=mi>3</span> <span class=p>,</span>
@@ -603,17 +603,17 @@
     <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;Person&#34;</span><span class=p>,</span>
     <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Asur&#34;</span><span class=p>,</span>
     <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/&#34;</span>
-  <span class=p>},</span>
+  <span class=p>}</span><span class=p>,</span>
   <span class=s2>&#34;author&#34;</span><span class=o>:</span> <span class=p>{</span>
     <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;Person&#34;</span><span class=p>,</span>
     <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Asur&#34;</span><span class=p>,</span>
     <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/&#34;</span>
-  <span class=p>},</span>
+  <span class=p>}</span><span class=p>,</span>
   <span class=s2>&#34;creator&#34;</span><span class=o>:</span> <span class=p>{</span>
     <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;Person&#34;</span><span class=p>,</span>
     <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Asur&#34;</span><span class=p>,</span>
     <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/&#34;</span>
-  <span class=p>},</span>
+  <span class=p>}</span><span class=p>,</span>
   <span class=s2>&#34;publisher&#34;</span><span class=o>:</span> <span class=p>{</span>
     <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;Organization&#34;</span><span class=p>,</span>
     <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Asur Bernardo&#34;</span><span class=p>,</span>
@@ -624,7 +624,7 @@
         <span class=s2>&#34;width&#34;</span><span class=o>:</span><span class=s2>&#34;600&#34;</span><span class=p>,</span>
         <span class=s2>&#34;height&#34;</span><span class=o>:</span><span class=s2>&#34;60&#34;</span>
     <span class=p>}</span>
-  <span class=p>},</span>
+  <span class=p>}</span><span class=p>,</span>
   <span class=s2>&#34;mainEntityOfPage&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/&#34;</span><span class=p>,</span>
   <span class=s2>&#34;keywords&#34;</span><span class=o>:</span> <span class=s2>&#34;[&#34;</span><span class=nx>blog</span><span class=s2>&#34;,&#34;</span><span class=nx>desarrollo</span><span class=s2>&#34;,&#34;</span><span class=nx>comentarios</span><span class=s2>&#34;,&#34;</span><span class=nx>remark</span><span class=s2>&#34;,&#34;</span><span class=nx>GPC</span><span class=s2>&#34;,&#34;</span><span class=nx>Compute</span> <span class=nx>engine</span><span class=s2>&#34;,&#34;</span><span class=nx>SEO</span><span class=s2>&#34;,
 </span><span class=s2>      &#34;</span><span class=nx>datos</span> <span class=nx>estructurados</span><span class=s2>&#34;,&#34;</span><span class=nx>breadcrumbs</span><span class=s2>&#34;,&#34;</span><span class=nx>website</span><span class=s2>&#34;,&#34;</span><span class=nx>carousel</span><span class=s2>&#34;]&#34;</span><span class=p>,</span>
@@ -716,31 +716,31 @@
       <span class=s2>&#34;position&#34;</span><span class=o>:</span> <span class=s2>&#34;1&#34;</span><span class=p>,</span>
       <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/&#34;</span><span class=p>,</span>
       <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Metablog #5 - Sistema de comentarios y datos estructurados&#34;</span>
-    <span class=p>},</span>
+    <span class=p>}</span><span class=p>,</span>
     <span class=p>{</span>
       <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;ListItem&#34;</span><span class=p>,</span>
       <span class=s2>&#34;position&#34;</span><span class=o>:</span> <span class=s2>&#34;2&#34;</span><span class=p>,</span>
       <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/metablogs/nuevo-dominio-legibilidad-integracion-amp-scripts/&#34;</span><span class=p>,</span>
       <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Metablog #4 - Nuevo dominio, nuevo layout y más AMP!&#34;</span>
-    <span class=p>},</span>
+    <span class=p>}</span><span class=p>,</span>
     <span class=p>{</span>
       <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;ListItem&#34;</span><span class=p>,</span>
       <span class=s2>&#34;position&#34;</span><span class=o>:</span> <span class=s2>&#34;3&#34;</span><span class=p>,</span>
       <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/metablogs/mejorando-workflow-docker-makefile-github-actions/&#34;</span><span class=p>,</span>
       <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Metablog #3 - Workflow con docker, makefile y Github actions&#34;</span>
-    <span class=p>},</span>
+    <span class=p>}</span><span class=p>,</span>
     <span class=p>{</span>
       <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;ListItem&#34;</span><span class=p>,</span>
       <span class=s2>&#34;position&#34;</span><span class=o>:</span> <span class=s2>&#34;4&#34;</span><span class=p>,</span>
       <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/metablogs/taxonomia-de-tags-highlight-codigo-analitica/&#34;</span><span class=p>,</span>
       <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Metablog #2 - Tags, highlighting de código y analítica&#34;</span>
-    <span class=p>},</span>
+    <span class=p>}</span><span class=p>,</span>
     <span class=p>{</span>
       <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;ListItem&#34;</span><span class=p>,</span>
       <span class=s2>&#34;position&#34;</span><span class=o>:</span> <span class=s2>&#34;5&#34;</span><span class=p>,</span>
       <span class=s2>&#34;url&#34;</span><span class=o>:</span> <span class=s2>&#34;https://asur.dev/metablogs/la-primera-iteracion-amp-estilos-y-miscelanea/&#34;</span><span class=p>,</span>
       <span class=s2>&#34;name&#34;</span><span class=o>:</span> <span class=s2>&#34;Metablog #1 - AMP, estilos y otras miscelaneas&#34;</span>
-    <span class=p>},</span>
+    <span class=p>}</span><span class=p>,</span>
     <span class=p>{</span>
       <span class=s2>&#34;@type&#34;</span><span class=o>:</span> <span class=s2>&#34;ListItem&#34;</span><span class=p>,</span>
       <span class=s2>&#34;position&#34;</span><span class=o>:</span> <span class=s2>&#34;6&#34;</span><span class=p>,</span>

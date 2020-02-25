@@ -42,6 +42,32 @@
     </url>
     
     <url>
+        <loc>https://asur.dev/tags/criptomonedas/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/tutoriales/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/tags/tutorial/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/tutoriales/como-desplegar-tu-propio-trading-bot-de-criptomonedas/</loc>
+        <lastmod>2020-01-11T14:12:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://asur.dev/metablogs/anuncios-con-adsense-y-comentarios-con-disqus/</loc>
         <lastmod>2019-12-23T12:09:32+02:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -86,6 +112,13 @@
     <url>
         <loc>https://asur.dev/metablogs/sistema-de-comentarios-gcp-y-datos-estructurados/</loc>
         <lastmod>2019-11-22T10:17:32+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://asur.dev/tutoriales/como-compartir-tu-local-por-internet-con-localtunnel/</loc>
+        <lastmod>2019-11-14T21:08:32+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -146,13 +179,6 @@
     
     <url>
         <loc>https://asur.dev/english/support/</loc>
-        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://asur.dev/tags/tutorial/</loc>
         <lastmod>0001-01-01T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>

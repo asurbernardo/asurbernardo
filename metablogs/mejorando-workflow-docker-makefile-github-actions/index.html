@@ -264,17 +264,17 @@
 </span></code></pre></td>
 <td class=lntd>
 <pre class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=k>FROM</span><span class=s> alpine:edge</span><span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>RUN</span> apk update <span class=se>\
 </span><span class=se></span>    <span class=o>&amp;&amp;</span> apk add git hugo --no-cache <span class=se>\
 </span><span class=se></span>    <span class=o>&amp;&amp;</span> rm -vrf /var/cache/apk/*<span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>RUN</span> git clone https://github.com/asurbernardo/blog.git<span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>WORKDIR</span><span class=s> /blog</span><span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>RUN</span> git submodule foreach pull origin master<span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>EXPOSE</span><span class=s> 1313</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -296,13 +296,13 @@
 <td class=lntd>
 <pre class=chroma><code class=language-yaml data-lang=yaml><span class=k>version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;3&#39;</span><span class=w>
 </span><span class=w></span><span class=k>services</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=k>web</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=k>build</span><span class=p>:</span><span class=w> </span>.<span class=w>
+</span><span class=w></span><span class=w>  </span><span class=k>web</span><span class=p>:</span><span class=w>
+</span><span class=w></span><span class=w>    </span><span class=k>build</span><span class=p>:</span><span class=w> </span>.<span class=w>
 </span><span class=w>    </span><span class=k>ports</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- <span class=s2>&#34;1313:1313&#34;</span><span class=w>
+</span><span class=w></span><span class=w>      </span>- <span class=s2>&#34;1313:1313&#34;</span><span class=w>
 </span><span class=w>    </span><span class=k>volumes</span><span class=p>:</span><span class=w>
-</span><span class=w>      </span>- .<span class=p>:</span>/blog<span class=w>
-</span><span class=w>    </span><span class=k>command</span><span class=p>:</span><span class=w> </span>hugo<span class=w> </span>server<span class=w> </span>--verbose<span class=w> </span>--watch<span class=w> </span>--buildFuture<span class=w> </span>--buildDrafts<span class=w> </span>-D<span class=w> </span>--bind<span class=w> </span><span class=m>0.0.0.0</span></code></pre></td></tr></tbody></table>
+</span><span class=w></span><span class=w>      </span>- .<span class=p>:</span>/blog<span class=w>
+</span><span class=w>    </span><span class=k>command</span><span class=p>:</span><span class=w> </span>hugo<span class=w> </span>server<span class=w> </span>--verbose<span class=w> </span>--watch<span class=w> </span>--buildFuture<span class=w> </span>--buildDrafts<span class=w> </span>-D<span class=w> </span>--bind<span class=w> </span><span class=m>0.0</span><span class=m>.0</span><span class=m>.0</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 
@@ -392,7 +392,7 @@
     @printf <span class=s2>&#34;\033[0;32mDeploying content to Github...\033[0m\n&#34;</span>
     <span class=nb>cd</span> public <span class=o>&amp;&amp;</span> <span class=se>\
 </span><span class=se></span>        git add --all <span class=o>&amp;&amp;</span> <span class=se>\
-</span><span class=se></span>        git commit -m <span class=s2>&#34;Rebuilding site - </span><span class=k>$(</span>NOW<span class=k>)</span><span class=s2>&#34;</span> <span class=o>&amp;&amp;</span> <span class=se>\
+</span><span class=se></span>        git commit -m <span class=s2>&#34;</span><span class=s2>Rebuilding site - </span><span class=k>$(</span>NOW<span class=k>)</span><span class=s2>&#34;</span> <span class=o>&amp;&amp;</span> <span class=se>\
 </span><span class=se></span>        git push origin master
 </code></pre></td></tr></tbody></table>
 </div>
@@ -476,36 +476,36 @@
 <td class=lntd>
 <pre class=chroma><code class=language-yml data-lang=yml><span class=k>name</span><span class=p>:</span><span class=w> </span>Deploy<span class=w> </span>blog<span class=w>
 </span><span class=w></span><span class=k>on</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=k>push</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=k>branches</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span>- master<span class=w>
+</span><span class=w></span><span class=w>  </span><span class=k>push</span><span class=p>:</span><span class=w>
+</span><span class=w></span><span class=w>    </span><span class=k>branches</span><span class=p>:</span><span class=w>
+</span><span class=w></span><span class=w>    </span>- master<span class=w>
 </span><span class=w>
 </span><span class=w></span><span class=k>jobs</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span><span class=k>build-deploy</span><span class=p>:</span><span class=w>
-</span><span class=w>    </span><span class=k>runs-on</span><span class=p>:</span><span class=w> </span>ubuntu-latest<span class=w>
+</span><span class=w></span><span class=w>  </span><span class=k>build-deploy</span><span class=p>:</span><span class=w>
+</span><span class=w></span><span class=w>    </span><span class=k>runs-on</span><span class=p>:</span><span class=w> </span>ubuntu-latest<span class=w>
 </span><span class=w>    </span><span class=k>steps</span><span class=p>:</span><span class=w>
-</span><span class=w>
+</span><span class=w></span><span class=w>
 </span><span class=w>    </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Pull<span class=w> </span>source<span class=w>
 </span><span class=w>      </span><span class=k>uses</span><span class=p>:</span><span class=w> </span>actions/checkout@master<span class=w>
 </span><span class=w>      </span><span class=k>with</span><span class=p>:</span><span class=w>
-</span><span class=w>        </span><span class=k>submodules</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span><span class=w></span><span class=w>        </span><span class=k>submodules</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
 </span><span class=w>
 </span><span class=w>    </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Update<span class=w> </span>submodules<span class=w> </span>to<span class=w> </span>latests<span class=w> </span>master<span class=w>
 </span><span class=w>      </span><span class=k>run</span><span class=p>:</span><span class=w> </span>git<span class=w> </span>submodule<span class=w> </span>foreach<span class=w> </span>git<span class=w> </span>pull<span class=w> </span>origin<span class=w> </span>master<span class=w>
 </span><span class=w>
 </span><span class=w>    </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Setup<span class=w> </span>Hugo<span class=w>
-</span><span class=w>      </span><span class=k>uses</span><span class=p>:</span><span class=w> </span>peaceiris/actions-hugo@v2<span class=m>.2.2</span><span class=w>
+</span><span class=w>      </span><span class=k>uses</span><span class=p>:</span><span class=w> </span>peaceiris/actions-hugo@v2<span class=m>.2</span><span class=m>.2</span><span class=w>
 </span><span class=w>      </span><span class=k>with</span><span class=p>:</span><span class=w>
-</span><span class=w>        </span><span class=k>hugo-version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;0.58.3&#39;</span><span class=w>
+</span><span class=w></span><span class=w>        </span><span class=k>hugo-version</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;0.58.3&#39;</span><span class=w>
 </span><span class=w>        </span><span class=k>extended</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
 </span><span class=w>
 </span><span class=w>    </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Build<span class=w>
 </span><span class=w>      </span><span class=k>run</span><span class=p>:</span><span class=w> </span>hugo<span class=w> </span>-t<span class=w> </span>amperage<span class=w> </span>--gc<span class=w> </span>--minify<span class=w>
 </span><span class=w>
 </span><span class=w>    </span>- <span class=k>name</span><span class=p>:</span><span class=w> </span>Deploy<span class=w> </span>script<span class=w>
-</span><span class=w>      </span><span class=k>uses</span><span class=p>:</span><span class=w> </span>peaceiris/actions-gh-pages@v2<span class=m>.5.0</span><span class=w>
+</span><span class=w>      </span><span class=k>uses</span><span class=p>:</span><span class=w> </span>peaceiris/actions-gh-pages@v2<span class=m>.5</span><span class=m>.0</span><span class=w>
 </span><span class=w>      </span><span class=k>env</span><span class=p>:</span><span class=w>
-</span><span class=w>        </span><span class=k>ACTIONS_DEPLOY_KEY</span><span class=p>:</span><span class=w> </span>${{<span class=w> </span>secrets.ACTIONS_DEPLOY_KEY<span class=w> </span>}}<span class=w>
+</span><span class=w></span><span class=w>        </span><span class=k>ACTIONS_DEPLOY_KEY</span><span class=p>:</span><span class=w> </span>${{<span class=w> </span>secrets.ACTIONS_DEPLOY_KEY<span class=w> </span>}}<span class=w>
 </span><span class=w>        </span><span class=k>EXTERNAL_REPOSITORY</span><span class=p>:</span><span class=w> </span>asurbernardo/asurbernardo.github.io<span class=w>
 </span><span class=w>        </span><span class=k>PUBLISH_BRANCH</span><span class=p>:</span><span class=w> </span>master<span class=w>
 </span><span class=w>        </span><span class=k>PUBLISH_DIR</span><span class=p>:</span><span class=w> </span>./public</code></pre></td></tr></tbody></table>

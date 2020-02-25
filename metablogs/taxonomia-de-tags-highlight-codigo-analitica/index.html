@@ -246,15 +246,7 @@
 <p>Para resaltar un trozo de código a la hora de escribir contenido tengo que usar un shortcode nativo de Hugo:</p>
 <pre><code>{{&lt; highlight php &#34;linenos=table&#34; &gt;}}
 
-&lt;?php
-
-// ... code
-
-function foo() {
-    $bar = &#39;string&#39;;
-}
-
-{{&lt; /highlight &gt;}}</code></pre>
+}}</code></pre>
 <p>Que se verá de la siguiente manera:</p>
 
 <div class=highlight><div class=chroma>
@@ -391,15 +383,15 @@ function foo() {
 </span><span class=lnt>18
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>amp-analytics</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;gtag&#34;</span> <span class=na>data-credentials</span><span class=o>=</span><span class=s>&#34;include&#34;</span><span class=p>&gt;</span>
-  <span class=p>&lt;</span><span class=nt>script</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;application/json&#34;</span><span class=p>&gt;</span>
+<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>amp-analytics</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;gtag&#34;</span> <span class=na>data-credentials</span><span class=o>=</span><span class=s>&#34;include&#34;</span><span class=p></span><span class=p>&gt;</span>
+  <span class=p>&lt;</span><span class=nt>script</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;application/json&#34;</span><span class=p></span><span class=p>&gt;</span>
     <span class=p>{</span>
       <span class=s2>&#34;vars&#34;</span><span class=o>:</span> <span class=p>{</span>
         <span class=s2>&#34;gtag_id&#34;</span><span class=o>:</span> <span class=s2>&#34;UA-128498798-1&#34;</span><span class=p>,</span>
         <span class=s2>&#34;config&#34;</span><span class=o>:</span> <span class=p>{</span>
           <span class=s2>&#34;UA-128498798-1&#34;</span><span class=o>:</span> <span class=p>{</span> <span class=s2>&#34;groups&#34;</span><span class=o>:</span> <span class=s2>&#34;default&#34;</span> <span class=p>}</span>
         <span class=p>}</span>
-      <span class=p>},</span>
+      <span class=p>}</span><span class=p>,</span>
       <span class=s2>&#34;triggers&#34;</span><span class=o>:</span> <span class=p>{</span>
         <span class=s2>&#34;trackPageview&#34;</span><span class=o>:</span> <span class=p>{</span>
           <span class=s2>&#34;on&#34;</span><span class=o>:</span> <span class=s2>&#34;visible&#34;</span><span class=p>,</span>
@@ -407,8 +399,8 @@ function foo() {
         <span class=p>}</span>
       <span class=p>}</span>
     <span class=p>}</span>
-  <span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
-<span class=p>&lt;/</span><span class=nt>amp-analytics</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
+  <span class=p>&lt;</span><span class=p>/</span><span class=nt>script</span><span class=p>&gt;</span>
+<span class=p>&lt;</span><span class=p>/</span><span class=nt>amp-analytics</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 

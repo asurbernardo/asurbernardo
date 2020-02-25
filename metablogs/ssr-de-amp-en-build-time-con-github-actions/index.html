@@ -314,7 +314,7 @@
 </span><span class=cp></span>
 <span class=k>for</span> file in <span class=k>$(</span>find <span class=si>${</span><span class=nv>INPUT_ROOT</span><span class=si>}</span> -name <span class=s2>&#34;*.html&#34;</span><span class=k>)</span><span class=p>;</span> <span class=k>do</span>
     <span class=o>[</span> -f <span class=s2>&#34;</span><span class=nv>$file</span><span class=s2>&#34;</span> <span class=o>]</span> <span class=o>||</span> <span class=nb>break</span>
-    <span class=nb>echo</span> <span class=s2>&#34;Optimizing </span><span class=nv>$file</span><span class=s2>&#34;</span>
+    <span class=nb>echo</span> <span class=s2>&#34;</span><span class=s2>Optimizing </span><span class=nv>$file</span><span class=s2>&#34;</span>
     ! <span class=nv>$GOPATH</span>/bin/transform <span class=nv>$file</span> &gt; /tmp/optimized.txt
     <span class=o>[</span> -s /tmp/optimized.txt <span class=o>]</span> <span class=o>&amp;&amp;</span> cat /tmp/optimized.txt &gt; <span class=nv>$file</span> <span class=se>\
 </span><span class=se></span>      <span class=o>||</span> <span class=nb>echo</span> <span class=s2>&#34;Not a valid AMP page. Omitting...&#34;</span>
@@ -350,11 +350,11 @@
 </span></code></pre></td>
 <td class=lntd>
 <pre class=chroma><code class=language-dockerfile data-lang=dockerfile><span class=k>FROM</span><span class=s> golang:latest</span><span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>RUN</span> go get -u github.com/ampproject/amppackager/cmd/transform<span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>COPY</span> entrypoint.sh /entrypoint.sh<span class=err>
-</span><span class=err>
+</span><span class=err></span><span class=err>
 </span><span class=err></span><span class=k>ENTRYPOINT</span> <span class=p>[</span> <span class=s2>&#34;/entrypoint.sh&#34;</span> <span class=p>]</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -386,7 +386,7 @@
 <td class=lntd>
 <pre class=chroma><code class=language-yml data-lang=yml><span class=k>name</span><span class=p>:</span><span class=w> </span><span class=s1>&#39;AMP optimizer action&#39;</span><span class=w>
 </span><span class=w></span><span class=k>description</span><span class=p>:</span><span class=w> </span><span class=k>&#39;GitHub Action to optimize AMP HTML files :zap</span><span class=p>:</span><span class=w>
-</span><span class=w>  </span>It<span class=w> </span>uses<span class=w> </span>AMP<span class=w> </span>Transformer<span class=w> </span>library.<span class=w> </span>Designed<span class=w> </span>for<span class=w> </span>static<span class=w> </span>web<span class=w> </span>generator<span class=w> </span>pipelines.<span class=s1>&#39;
+</span><span class=w></span><span class=w>  </span>It<span class=w> </span>uses<span class=w> </span>AMP<span class=w> </span>Transformer<span class=w> </span>library.<span class=w> </span>Designed<span class=w> </span>for<span class=w> </span>static<span class=w> </span>web<span class=w> </span>generator<span class=w> </span>pipelines.<span class=s1>&#39;
 </span><span class=s1>author: &#39;</span>asurbernardo<span class=s1>&#39;
 </span><span class=s1>runs:
 </span><span class=s1>  using: &#39;</span>docker<span class=s1>&#39;

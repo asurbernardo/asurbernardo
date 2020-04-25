@@ -246,7 +246,15 @@
 <p>Para resaltar un trozo de código a la hora de escribir contenido tengo que usar un shortcode nativo de Hugo:</p>
 <pre><code>{{&lt; highlight php &#34;linenos=table&#34; &gt;}}
 
-}}</code></pre>
+&lt;?php
+
+// ... code
+
+function foo() {
+    $bar = &#39;string&#39;;
+}
+
+{{&lt; /highlight &gt;}}</code></pre>
 <p>Que se verá de la siguiente manera:</p>
 
 <div class=highlight><div class=chroma>
@@ -383,15 +391,15 @@
 </span><span class=lnt>18
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>amp-analytics</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;gtag&#34;</span> <span class=na>data-credentials</span><span class=o>=</span><span class=s>&#34;include&#34;</span><span class=p></span><span class=p>&gt;</span>
-  <span class=p>&lt;</span><span class=nt>script</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;application/json&#34;</span><span class=p></span><span class=p>&gt;</span>
+<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>amp-analytics</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;gtag&#34;</span> <span class=na>data-credentials</span><span class=o>=</span><span class=s>&#34;include&#34;</span><span class=p>&gt;</span>
+  <span class=p>&lt;</span><span class=nt>script</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;application/json&#34;</span><span class=p>&gt;</span>
     <span class=p>{</span>
       <span class=s2>&#34;vars&#34;</span><span class=o>:</span> <span class=p>{</span>
         <span class=s2>&#34;gtag_id&#34;</span><span class=o>:</span> <span class=s2>&#34;UA-128498798-1&#34;</span><span class=p>,</span>
         <span class=s2>&#34;config&#34;</span><span class=o>:</span> <span class=p>{</span>
           <span class=s2>&#34;UA-128498798-1&#34;</span><span class=o>:</span> <span class=p>{</span> <span class=s2>&#34;groups&#34;</span><span class=o>:</span> <span class=s2>&#34;default&#34;</span> <span class=p>}</span>
         <span class=p>}</span>
-      <span class=p>}</span><span class=p>,</span>
+      <span class=p>},</span>
       <span class=s2>&#34;triggers&#34;</span><span class=o>:</span> <span class=p>{</span>
         <span class=s2>&#34;trackPageview&#34;</span><span class=o>:</span> <span class=p>{</span>
           <span class=s2>&#34;on&#34;</span><span class=o>:</span> <span class=s2>&#34;visible&#34;</span><span class=p>,</span>
@@ -399,8 +407,8 @@
         <span class=p>}</span>
       <span class=p>}</span>
     <span class=p>}</span>
-  <span class=p>&lt;</span><span class=p>/</span><span class=nt>script</span><span class=p>&gt;</span>
-<span class=p>&lt;</span><span class=p>/</span><span class=nt>amp-analytics</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
+  <span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+<span class=p>&lt;/</span><span class=nt>amp-analytics</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 
@@ -409,12 +417,11 @@
 <p><strong>Usuarios y sesiones:</strong> De manera general puedo ver la cantidad de usuarios y sesiones de la web, así como el porcentaje de rebote y las páginas visitadas por cada sesión.</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Usuarios y sesiones - Google Analytics" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=623 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general.jpg width=1617><i-amphtml-sizer style=display:block;padding-top:38.5281%;></i-amphtml-sizer>
+            <amp-img alt="Usuarios y sesiones - Google Analytics" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=623 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general_hu9caac59f96b12f165b96a4585cd21d29_72431_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general_hu9caac59f96b12f165b96a4585cd21d29_72431_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general_hu9caac59f96b12f165b96a4585cd21d29_72431_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general_hu9caac59f96b12f165b96a4585cd21d29_72431_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-audiencia-general_hu9caac59f96b12f165b96a4585cd21d29_72431_800x0_resize_q75_box.jpg 800w" width=1617><i-amphtml-sizer style=display:block;padding-top:38.5281%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -423,12 +430,11 @@
 <p><strong>Adquisición:</strong> También me gusta ver como han llegado los usuarios al sitio y la diferencia de calidad de los diferentes tipos.</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Adquisición de usuarios - Google Analytics" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=331 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion.jpg width=1131><i-amphtml-sizer style=display:block;padding-top:29.2661%;></i-amphtml-sizer>
+            <amp-img alt="Adquisición de usuarios - Google Analytics" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=331 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion_hubb05232cf40adffa3a54e51acec406ac_22890_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion_hubb05232cf40adffa3a54e51acec406ac_22890_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion_hubb05232cf40adffa3a54e51acec406ac_22890_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion_hubb05232cf40adffa3a54e51acec406ac_22890_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-adquisicion_hubb05232cf40adffa3a54e51acec406ac_22890_800x0_resize_q75_box.jpg 800w" width=1131><i-amphtml-sizer style=display:block;padding-top:29.2661%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -437,12 +443,11 @@
 <p><strong>Tiempo en página de posts:</strong> Una vista algo más atómica de como están funcionando cada uno de los posts, para posteriormente poder analizarlo e iterar.</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Comportamiento por post - Google Analytics" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=417 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts.jpg width=1620><i-amphtml-sizer style=display:block;padding-top:25.7407%;></i-amphtml-sizer>
+            <amp-img alt="Comportamiento por post - Google Analytics" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=417 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts_hud5c5a8b2b14153bbe1e602de164f3182_70350_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts_hud5c5a8b2b14153bbe1e602de164f3182_70350_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts_hud5c5a8b2b14153bbe1e602de164f3182_70350_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts_hud5c5a8b2b14153bbe1e602de164f3182_70350_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/google-analytics-comportamiento-posts_hud5c5a8b2b14153bbe1e602de164f3182_70350_800x0_resize_q75_box.jpg 800w" width=1620><i-amphtml-sizer style=display:block;padding-top:25.7407%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -463,12 +468,11 @@ TXT   | asurbernardo.com  | google-site-verification=drV... | 5 min</code></pre>
 <p><strong>Rendimiento:</strong> Las veces que aparecen una página de esta web en Google listada, en que posición y que CTR tiene.</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Rendimiento - Search Console" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=363 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento.jpg srcset="https://asur-dev.cdn.ampproject.org/ii/w1000/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento.jpg 1000w, https://asur-dev.cdn.ampproject.org/ii/w1200/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento.jpg 1200w" width=913><i-amphtml-sizer style=display:block;padding-top:39.7590%;></i-amphtml-sizer>
+            <amp-img alt="Rendimiento - Search Console" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=363 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento_hu4cb4bb40eab9085d0548f431fb442a3d_16240_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento_hu4cb4bb40eab9085d0548f431fb442a3d_16240_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento_hu4cb4bb40eab9085d0548f431fb442a3d_16240_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento_hu4cb4bb40eab9085d0548f431fb442a3d_16240_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-rendimiento_hu4cb4bb40eab9085d0548f431fb442a3d_16240_800x0_resize_q75_box.jpg 800w" width=913><i-amphtml-sizer style=display:block;padding-top:39.7590%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -477,12 +481,11 @@ TXT   | asurbernardo.com  | google-site-verification=drV... | 5 min</code></pre>
 <p><strong>Cobertura:</strong> Información sobre como está indexado este site en Google, las páginas correctas y los posibles errores.</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Cobertura - Search Console" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=430 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura.jpg srcset="https://asur-dev.cdn.ampproject.org/ii/w1000/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura.jpg 1000w, https://asur-dev.cdn.ampproject.org/ii/w1200/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura.jpg 1200w" width=909><i-amphtml-sizer style=display:block;padding-top:47.3047%;></i-amphtml-sizer>
+            <amp-img alt="Cobertura - Search Console" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=430 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura_hu3542a6babd2d3c280fca4c554e8c3ff0_21201_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura_hu3542a6babd2d3c280fca4c554e8c3ff0_21201_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura_hu3542a6babd2d3c280fca4c554e8c3ff0_21201_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura_hu3542a6babd2d3c280fca4c554e8c3ff0_21201_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-cobertura_hu3542a6babd2d3c280fca4c554e8c3ff0_21201_800x0_resize_q75_box.jpg 800w" width=909><i-amphtml-sizer style=display:block;padding-top:47.3047%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -491,12 +494,11 @@ TXT   | asurbernardo.com  | google-site-verification=drV... | 5 min</code></pre>
 <p><strong>Mejoras:</strong> Todas las señales que indican a Google la calidad de la página más allá del contenido, como datos estructurados, AMP, etc.</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Mejoras - Search console" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=210 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras.jpg srcset="https://asur-dev.cdn.ampproject.org/ii/w1000/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras.jpg 1000w, https://asur-dev.cdn.ampproject.org/ii/w1200/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras.jpg 1200w" width=908><i-amphtml-sizer style=display:block;padding-top:23.1278%;></i-amphtml-sizer>
+            <amp-img alt="Mejoras - Search console" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=210 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras_hu94461076628098bd64e9625a15c5fa3c_9896_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras_hu94461076628098bd64e9625a15c5fa3c_9896_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras_hu94461076628098bd64e9625a15c5fa3c_9896_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras_hu94461076628098bd64e9625a15c5fa3c_9896_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/search-console-mejoras_hu94461076628098bd64e9625a15c5fa3c_9896_800x0_resize_q75_box.jpg 800w" width=908><i-amphtml-sizer style=display:block;padding-top:23.1278%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -511,12 +513,11 @@ TXT   | asurbernardo.com  | google-site-verification=drV... | 5 min</code></pre>
 <p><strong>Requests:</strong> Esto es más por curiosidad que otra cosa, al final el ancho de banda consumido y los hits cacheados le concierne a Github, no a mí, pero aún así me encanta saberlo.</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Ancho de banda - Cloudflare" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=520 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda.jpg width=1018><i-amphtml-sizer style=display:block;padding-top:51.0806%;></i-amphtml-sizer>
+            <amp-img alt="Ancho de banda - Cloudflare" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=520 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda_hu127f0fae7d627b20b0a3457f1575b4bc_35680_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda_hu127f0fae7d627b20b0a3457f1575b4bc_35680_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda_hu127f0fae7d627b20b0a3457f1575b4bc_35680_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda_hu127f0fae7d627b20b0a3457f1575b4bc_35680_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-ancho-de-banda_hu127f0fae7d627b20b0a3457f1575b4bc_35680_800x0_resize_q75_box.jpg 800w" width=1018><i-amphtml-sizer style=display:block;padding-top:51.0806%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -525,12 +526,11 @@ TXT   | asurbernardo.com  | google-site-verification=drV... | 5 min</code></pre>
 <p><strong>Datos técnicos:</strong> Ver que porcentaje de uso de <em>http/2</em>, la cantidad de datos ahorrados por la compresión <em>gzip</em> y la descomposición de como se usa el ancho de banda, de nuevo, no es que sea imprescindible pero puede dar información relavante dependiendo del contexto, y qué mejor manera de hacerlo que en forma de quesitos?</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Datos técnicos - Cloudflare" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=378 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos.jpg width=1025><i-amphtml-sizer style=display:block;padding-top:36.8780%;></i-amphtml-sizer>
+            <amp-img alt="Datos técnicos - Cloudflare" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=378 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos_hue56641dfa49419b326ae4659894f84da_31091_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos_hue56641dfa49419b326ae4659894f84da_31091_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos_hue56641dfa49419b326ae4659894f84da_31091_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos_hue56641dfa49419b326ae4659894f84da_31091_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/taxonomia-de-tags-highlight-codigo-analitica/cloudflare-datos-tecnicos_hue56641dfa49419b326ae4659894f84da_31091_800x0_resize_q75_box.jpg 800w" width=1025><i-amphtml-sizer style=display:block;padding-top:36.8780%;></i-amphtml-sizer>
             </amp-img>
         
     

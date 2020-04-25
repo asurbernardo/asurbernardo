@@ -267,8 +267,8 @@
 <pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>amp-install-serviceworker</span>
   <span class=na>src</span><span class=o>=</span><span class=s>&#34;https://asur.dev/sw.js&#34;</span>
   <span class=na>data-iframe-src</span><span class=o>=</span><span class=s>&#34;https://asur.dev/install-sw.html&#34;</span>
-  <span class=na>layout</span><span class=o>=</span><span class=s>&#34;nodisplay&#34;</span><span class=p></span><span class=p>&gt;</span>
-<span class=p>&lt;</span><span class=p>/</span><span class=nt>amp-install-serviceworker</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
+  <span class=na>layout</span><span class=o>=</span><span class=s>&#34;nodisplay&#34;</span><span class=p>&gt;</span>
+<span class=p>&lt;/</span><span class=nt>amp-install-serviceworker</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 
@@ -307,19 +307,19 @@
 </span><span class=lnt>13
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-javascript data-lang=javascript><span class=nx>importScripts</span><span class=p>(</span><span class=s1>&#39;https://cdn.ampproject.org/sw/amp-sw.js&#39;</span><span class=p>)</span><span class=p>;</span>
+<pre class=chroma><code class=language-javascript data-lang=javascript><span class=nx>importScripts</span><span class=p>(</span><span class=s1>&#39;https://cdn.ampproject.org/sw/amp-sw.js&#39;</span><span class=p>);</span>
 
-<span class=nx>AMP_SW</span><span class=p>.</span><span class=nx>init</span><span class=p>(</span><span class=p>{</span>
-  <span class=nx>assetCachingOptions</span><span class=o>:</span> <span class=p>[</span><span class=p>{</span>
+<span class=nx>AMP_SW</span><span class=p>.</span><span class=nx>init</span><span class=p>({</span>
+  <span class=nx>assetCachingOptions</span><span class=o>:</span> <span class=p>[{</span>
     <span class=nx>regexp</span><span class=o>:</span> <span class=sr>/\.(png|jpg|woff2|woff|css|js)/</span><span class=p>,</span>
     <span class=nx>cachingStrategy</span><span class=o>:</span> <span class=s1>&#39;CACHE_FIRST&#39;</span><span class=p>,</span>
-  <span class=p>}</span><span class=p>]</span><span class=p>,</span>
+  <span class=p>}],</span>
   <span class=nx>offlinePageOptions</span><span class=o>:</span> <span class=p>{</span>
     <span class=nx>url</span><span class=o>:</span> <span class=s1>&#39;/offline.html&#39;</span><span class=p>,</span>
-    <span class=nx>assets</span><span class=o>:</span> <span class=p>[</span><span class=p>]</span><span class=p>,</span>
-  <span class=p>}</span><span class=p>,</span>
-  <span class=nx>linkPrefetchOptions</span><span class=o>:</span> <span class=p>{</span><span class=p>}</span>
-<span class=p>}</span><span class=p>)</span><span class=p>;</span>
+    <span class=nx>assets</span><span class=o>:</span> <span class=p>[],</span>
+  <span class=p>},</span>
+  <span class=nx>linkPrefetchOptions</span><span class=o>:</span> <span class=p>{}</span>
+<span class=p>});</span>
 </code></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -331,12 +331,11 @@
 <p>Con esto el service worker ya se registra correctamente. Lo podemos confirmar con <em>Google DevTools</em>:</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Éxito instalación service worker en DevTools" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=525 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools.jpg width=1048><i-amphtml-sizer style=display:block;padding-top:50.0954%;></i-amphtml-sizer>
+            <amp-img alt="Éxito instalación service worker en DevTools" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=525 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools_hu0e76697282e16347da2fae0f1382c289_37489_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools_hu0e76697282e16347da2fae0f1382c289_37489_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools_hu0e76697282e16347da2fae0f1382c289_37489_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools_hu0e76697282e16347da2fae0f1382c289_37489_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-instalacion-service-worker-dev-tools_hu0e76697282e16347da2fae0f1382c289_37489_800x0_resize_q75_box.jpg 800w" width=1048><i-amphtml-sizer style=display:block;padding-top:50.0954%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -384,15 +383,15 @@
   <span class=nt>&#34;theme_color&#34;</span><span class=p>:</span> <span class=s2>&#34;#ef8b80&#34;</span><span class=p>,</span>
   <span class=nt>&#34;description&#34;</span><span class=p>:</span> <span class=s2>&#34;Bienvenid@ a mi blog, si te gusta el desarrollo web, el SEO, el open source
 </span><span class=s2>    y la tecnología en general echa un vistazo, seguro que encuentras algo interesante.&#34;</span><span class=p>,</span>
-  <span class=nt>&#34;icons&#34;</span><span class=p>:</span><span class=p>[</span><span class=p>{</span>
+  <span class=nt>&#34;icons&#34;</span><span class=p>:[{</span>
       <span class=nt>&#34;src&#34;</span><span class=p>:</span><span class=s2>&#34;/icons/android-chrome-192x192.png&#34;</span><span class=p>,</span>
       <span class=nt>&#34;sizes&#34;</span><span class=p>:</span><span class=s2>&#34;192x192&#34;</span><span class=p>,</span>
       <span class=nt>&#34;type&#34;</span><span class=p>:</span><span class=s2>&#34;image/png&#34;</span>
-    <span class=p>}</span><span class=p>,</span><span class=p>{</span>
+    <span class=p>},{</span>
       <span class=nt>&#34;src&#34;</span><span class=p>:</span><span class=s2>&#34;/icons/android-chrome-512x512.png&#34;</span><span class=p>,</span>
       <span class=nt>&#34;sizes&#34;</span><span class=p>:</span><span class=s2>&#34;512x512&#34;</span><span class=p>,</span>
       <span class=nt>&#34;type&#34;</span><span class=p>:</span><span class=s2>&#34;image/png&#34;</span>
-  <span class=p>}</span><span class=p>]</span>
+  <span class=p>}]</span>
 <span class=p>}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -421,25 +420,24 @@
 </span><span class=lnt>7
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;manifest&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/manifest.json&#34;</span><span class=p></span><span class=p>&gt;</span>
+<pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;manifest&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/manifest.json&#34;</span><span class=p>&gt;</span>
 <span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;icon&#34;</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;image/png&#34;</span>
-    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;32x32&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-32x32.png&#34;</span><span class=p></span><span class=p>&gt;</span>
+    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;32x32&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-32x32.png&#34;</span><span class=p>&gt;</span>
 <span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;icon&#34;</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;image/png&#34;</span>
-    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;16x16&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-16x16.png&#34;</span><span class=p></span><span class=p>&gt;</span>
+    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;16x16&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/favicon-16x16.png&#34;</span><span class=p>&gt;</span>
 <span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;apple-touch-icon&#34;</span>
-    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;180x180&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/apple-touch-icon.png&#34;</span><span class=p></span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
+    <span class=na>sizes</span><span class=o>=</span><span class=s>&#34;180x180&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;https://asur.dev/icons/apple-touch-icon.png&#34;</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 
 <p>Listo, al comprobar de nuevo en <em>DevTools Lighthouse</em> se puede ver que la página es una PWA válida:</p>
 
 <figure class="figure ">
-
     
     
     
         
-            <amp-img alt="Éxito validación de PWA en DevTools Lighthouse" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=895 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse.jpg srcset="https://asur-dev.cdn.ampproject.org/ii/w1000/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse.jpg 1000w, https://asur-dev.cdn.ampproject.org/ii/w1200/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse.jpg 1200w" width=924><i-amphtml-sizer style=display:block;padding-top:96.8615%;></i-amphtml-sizer>
+            <amp-img alt="Éxito validación de PWA en DevTools Lighthouse" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=895 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse_hu0801d62da1aefdefdf44b579a5a642f2_63528_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse_hu0801d62da1aefdefdf44b579a5a642f2_63528_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse_hu0801d62da1aefdefdf44b579a5a642f2_63528_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse_hu0801d62da1aefdefdf44b579a5a642f2_63528_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/pwa-en-amp-con-service-worker-e-i18n/exito-validacion-dev-tools-lighthouse_hu0801d62da1aefdefdf44b579a5a642f2_63528_800x0_resize_q75_box.jpg 800w" width=924><i-amphtml-sizer style=display:block;padding-top:96.8615%;></i-amphtml-sizer>
             </amp-img>
         
     
@@ -486,7 +484,7 @@
   <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;Go back to the homepage&#34;</span>
 <span class=p>[</span><span class=nx>by</span><span class=p>]</span>
   <span class=nx>other</span> <span class=p>=</span> <span class=s2>&#34;By&#34;</span>
-<span class=p>[</span><span class=p>.</span><span class=p>.</span><span class=p>.</span><span class=p>]</span></code></pre></td></tr></tbody></table>
+<span class=p>[...]</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
 

@@ -198,10 +198,7 @@
 </amp-autocomplete></header>
 		<main class=main>
 	<article class=content>
-		
-
-<h1 id=preparando-amperage-para-el-dominio-público-i>Preparando Amperage para el dominio público (I)</h1>
-
+		<h1 id=preparando-amperage-para-el-dominio-público-i>Preparando Amperage para el dominio público (I)</h1>
 <section class=under-title>
     <div class=under-title__info>
         <time datetime=2019-12-11T10:40:13>
@@ -227,44 +224,39 @@
 <amp-social-share aria-label="Compartir en Linkedin" class="social-share__button i-amphtml-layout-fixed i-amphtml-layout-size-defined" height=50 i-amphtml-layout=fixed style=width:50px;height:50px; type=linkedin width=50></amp-social-share>
 <amp-social-share aria-label="Compartir en Pinterest" class="social-share__button i-amphtml-layout-fixed i-amphtml-layout-size-defined" height=50 i-amphtml-layout=fixed style=width:50px;height:50px; type=pinterest width=50></amp-social-share></div>
 </section>
-
 <p>La fecha de publicación de <strong>Amperage</strong> cada vez está más cerca. Ha llegado un punto es el que estoy satisfecho con el proyecto para crear una versión inicial <code>1.0.0</code>.</p>
-
 <blockquote>
 <p>¿Pero a qué te refieres con publicar? Ya das la chapa todas las semanas por Twitter… 🤨</p>
 </blockquote>
+<p>Pues resulta que GoHugo tiene una 
 
-<p>Pues resulta que GoHugo tiene una <a href=https://themes.gohugo.io/ target=_top>página con sus temas oficiales</a>. <strong>Mi objetivo es que Amperage llegue a estar listado en esa página.</strong></p>
 
-<p>Existe un <a href=https://github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list target=_top>procedimiento a seguir</a> para conseguirlo, hay que crear un <em>Issue</em> en el repositorio de esa página, pero antes hay que cumplir una serie de requisitos básicos y por supuesto tener unas features que atraigan a la gente a usar tu tema.</p>
+<a href=https://themes.gohugo.io rel="nofollow noopener noreferrer" target=_blank>
+    página con sus temas oficiales
+</a>. <strong>Mi objetivo es que Amperage llegue a estar listado en esa página.</strong></p>
+<p>Existe un 
 
+
+<a href=https://github.com/gohugoio/hugoThemes/blob/master/README.md#adding-a-theme-to-the-list rel="nofollow noopener noreferrer" target=_blank>
+    procedimiento a seguir
+</a> para conseguirlo, hay que crear un <em>Issue</em> en el repositorio de esa página, pero antes hay que cumplir una serie de requisitos básicos y por supuesto tener unas features que atraigan a la gente a usar tu tema.</p>
 <p>De esto voy a hablar en este metablog, de los toques finales antes de mandar mi solicitud! A por ello!!</p>
-
-<p><strong>Tabla de contenidos:</strong>
+<p>Tabla de contenidos:
 </p><nav id=TableOfContents>
-<ul>
-<li><a href=#preparando-amperage-para-el-dominio-público-i>Preparando Amperage para el dominio público (I)</a>
-<ul>
-<li><a href=#paginación-de-listados>Paginación de listados 📖</a></li>
-<li><a href=#traducción-de-fechas>Traducción de fechas 📅</a></li>
-<li><a href=#poder-sobreescribir-estilos>Poder sobreescribir estilos 💅</a></li>
-<li><a href=#soportar-menús>Soportar menús 🍔</a></li>
-<li><a href=#links-entre-idiomas>Links entre idiomas 🌏</a></li>
-<li><a href=#próximo-destino>Próximo destino 🛣️</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href=#paginación-de-listados->Paginación de listados 📖</a></li>
+    <li><a href=#traducción-de-fechas->Traducción de fechas 📅</a></li>
+    <li><a href=#poder-sobreescribir-estilos->Poder sobreescribir estilos 💅</a></li>
+    <li><a href=#soportar-menús->Soportar menús 🍔</a></li>
+    <li><a href=#links-entre-idiomas->Links entre idiomas 🌏</a></li>
+    <li><a href=#próximo-destino->Próximo destino 🛣️</a></li>
+  </ul>
 </nav><p></p>
-
-<h2 id=paginación-de-listados>Paginación de listados 📖</h2>
-
+<h2 id=paginación-de-listados->Paginación de listados 📖</h2>
 <p>De momento la cantidad de posts que tengo en el blog no es descomunal, por lo que puedo ir tirando sin paginación, además mi homepage pesa 6Kb así que tampoco es que se vaya a sobrecargar el DOM.</p>
-
 <p>Aún así carecer de paginación no es escalable y tampoco significa que alguien que vaya a usar el tema no necesite esta funcionalidad, así que toca implementarla.</p>
-
 <p>Este es otro ejemplo de funcionalidad con soporte nativo por parte de Hugo. Lo único que he tenido que hacer es una plantilla de paginación simple (<em>anterior/siguiente</em>) y darle unos estilos para que sea consecuente con el resto de la web.</p>
-
 <p>La plantilla de paginación queda así:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -291,9 +283,7 @@
 <span class=cp>{{</span><span class=w> </span><span class=k>end</span><span class=w> </span><span class=cp>}}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Y con estos estilos básicos quedaría presentable:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -322,9 +312,7 @@
 <span class=p>}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Por supuesto para que los robots detecten esta paginación también he añadido las metatags con <code>rel=&#34;next&#34;</code> y <code>rel=&#34;prev&#34;</code> en el head de la siguiente manera:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -351,15 +339,10 @@
 <span class=cp>{{</span><span class=w> </span><span class=k>end</span><span class=w> </span><span class=cp>}}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Para verlo me temo que vas a tener que esperar al siguiente post porque he puesto la paginación a 10 y es justo la cantidad que llevo, así que todavía no se ve nada! 😁</p>
-
-<h2 id=traducción-de-fechas>Traducción de fechas 📅</h2>
-
+<h2 id=traducción-de-fechas->Traducción de fechas 📅</h2>
 <p>Quedaba un poco raro en los posts que la fecha saliese con el formato numérico (<code>05-09-1994</code>). Además en otros paises como EEUU el mes va delante del día, así que me ha tocado echar un ojo a esto también.</p>
-
 <p>Al final he decidido escribir el mes en letra, en vez de en cifra, creo que queda mejor en general. Para esto he tenido que hacer un <em>workaround</em> algo raro:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt>1
@@ -382,9 +365,7 @@
 <span class=p>&lt;/</span><span class=nt>time</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>La idea es que con esta línea <code>{{ $months := index .Site.Data (i18n &#34;months&#34;) }}</code> puedo mirar un fichero en la carpeta data del tenga el nombre de <code>meses</code> en el idioma correspondiente, por ejemplo si la página está en inglés buscará <code>months.yml</code>.</p>
-
 <p>Ahora si creo ese fichero con los meses y como clave su número en el año los puedo imprimir. Así quedaría por ejemplo el <code>months.yml</code>:</p>
 <pre><code>1: &#34;January&#34;
 2: &#34;February&#34;
@@ -397,17 +378,12 @@
 9: &#34;September&#34;
 10: &#34;October&#34;
 11: &#34;November&#34;
-12: &#34;December&#34;</code></pre>
-<h2 id=poder-sobreescribir-estilos>Poder sobreescribir estilos 💅</h2>
-
+12: &#34;December&#34;
+</code></pre><h2 id=poder-sobreescribir-estilos->Poder sobreescribir estilos 💅</h2>
 <p>Pues claro! La gente es poco probable que tenga el mismo gusto que yo, así que he implementado la posibilidad de sobreescribir los estilos por defecto.</p>
-
 <p>El CSS original minificado solo pesa 5Kb así que deja otros 45Kb extra de margen para que la gente lo deje a su gusto!</p>
-
 <p>Lo único que tienen que hacer es añadirlos en <code>assets/custom.scss</code> y ya se transpila, minifica e inserta automáticamente. 👍</p>
-
 <p>Lo he conseguido jugando un poco con el <em>lookup order</em> de Hugo:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -434,13 +410,14 @@
 <span class=p>&lt;/</span><span class=nt>style</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
+<h2 id=soportar-menús->Soportar menús 🍔</h2>
+<p>Si has visitado la lista de requisitos que he linkeado arriba, puedes ver que una de las condiciones es soportar el 
 
-<h2 id=soportar-menús>Soportar menús 🍔</h2>
 
-<p>Si has visitado la lista de requisitos que he linkeado arriba, puedes ver que una de las condiciones es soportar el <a href=https://github.com/gohugoio/hugoBasicExample target=_top>ejemplo básico de site de Hugo</a>. Pues adivina, este ejemplo tiene menús, así que otra cosa más para la lista.</p>
-
+<a href=https://github.com/gohugoio/hugoBasicExample rel="nofollow noopener noreferrer" target=_blank>
+    ejemplo básico de site de Hugo
+</a>. Pues adivina, este ejemplo tiene menús, así que otra cosa más para la lista.</p>
 <p>Los menús en Hugo se configuran en el <code>config.toml</code> y es algo <em>custom</em> de cada site. Queda así:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -471,9 +448,7 @@
 <span class=p>[...]</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Esta configuración se bindea a la variable <code>.Site</code> en <em>build time</em> y podemos acceder a ella para imprimirla:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -506,13 +481,9 @@
 <span class=p>&lt;/</span><span class=nt>ul</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
-<h2 id=links-entre-idiomas>Links entre idiomas 🌏</h2>
-
+<h2 id=links-entre-idiomas->Links entre idiomas 🌏</h2>
 <p>Esto ha sido preferencia personal. Para mejorar el interlinking entre idiomas y que hereden el <em>pagerank</em> de la página padre he decidido añadir en el footer una lista de todas las homepages en los distintos idiomas.</p>
-
 <p>El snippet:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -541,9 +512,7 @@
 <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>También para mejorar el reconocimiento multi-idioma por los bots he añadido las tags de <em>hreflang</em> a la web, pero <strong>solo en las homepages</strong>.</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt>1
@@ -560,12 +529,14 @@
 <span class=cp>{{</span><span class=w> </span><span class=k>end</span><span class=w> </span><span class=cp>}}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
-<h2 id=próximo-destino>Próximo destino 🛣️</h2>
-
+<h2 id=próximo-destino->Próximo destino 🛣️</h2>
 <p>Voy a hacer una segunda parte para este post, parece que tenía más cosas que preparar de las que esperaba. Ya no queda nada! <em>Stay tuned!</em> 😎</p>
+<p>
 
-<p><a href=https://asur.dev/metablogs/preparacion-tema-gohugo-amperage-dominio-publico-ii/ target=_top>Seguir leyendo la segunda parte de este post!</a></p>
+
+<a data-rel=prefetch href=https://asur.dev/https://asur.dev/metablogs/preparacion-tema-gohugo-amperage-dominio-publico-ii/ target=_top>
+    Seguir leyendo la segunda parte de este post!
+</a></p>
 
 
     <h2 class=related-content__title>Lecturas relacionadas 📖</h2>

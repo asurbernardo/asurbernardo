@@ -198,10 +198,7 @@
 </amp-autocomplete></header>
 		<main class=main>
 	<article class=content>
-		
-
-<h1 id=la-primera-iteración-amp-estilos-y-otras-miscelaneas>La primera iteración! AMP, estilos y otras miscelaneas</h1>
-
+		<h1 id=la-primera-iteración-amp-estilos-y-otras-miscelaneas>La primera iteración! AMP, estilos y otras miscelaneas</h1>
 <section class=under-title>
     <div class=under-title__info>
         <time datetime=2019-10-19T14:09:32>
@@ -227,61 +224,48 @@
 <amp-social-share aria-label="Compartir en Linkedin" class="social-share__button i-amphtml-layout-fixed i-amphtml-layout-size-defined" height=50 i-amphtml-layout=fixed style=width:50px;height:50px; type=linkedin width=50></amp-social-share>
 <amp-social-share aria-label="Compartir en Pinterest" class="social-share__button i-amphtml-layout-fixed i-amphtml-layout-size-defined" height=50 i-amphtml-layout=fixed style=width:50px;height:50px; type=pinterest width=50></amp-social-share></div>
 </section>
-
 <p>Bueno, bueno, bueno, parece que la primera iteración del blog ya está aquí! La verdad que antes de lo que me esperaba, he empezado este proyecto con muchas ganas. Hay bastantes novedades así que vamos a echarles un ojo, explicarlas y hablar sobre las cosas nuevas con las que he trasteado y que he aprendido.</p>
-
-<p><strong>Tabla de contenidos:</strong>
+<p>Tabla de contenidos:
 </p><nav id=TableOfContents>
-<ul>
-<li><a href=#la-primera-iteración-amp-estilos-y-otras-miscelaneas>La primera iteración! AMP, estilos y otras miscelaneas</a>
-<ul>
-<li><a href=#los-estilos>Los estilos 💅🏻</a>
-<ul>
-<li><a href=#el-layout>El layout</a></li>
-<li><a href=#style-reset>Style reset</a></li>
-<li><a href=#web-safe-fonts>Web safe fonts</a></li>
-<li><a href=#position-sticky>Position sticky</a></li>
-</ul></li>
-<li><a href=#el-amp>El AMP ⚡</a></li>
-<li><a href=#la-toc-y-posts-relacionados>La TOC y posts relacionados 🔗</a></li>
-<li><a href=#miscelánea>Miscelánea 🧪</a>
-<ul>
-<li><a href=#la-vulnerabilidad-del-target-blank>La vulnerabilidad del target blank</a></li>
-<li><a href=#bem>BEM</a></li>
-</ul></li>
-<li><a href=#siguientes-pasos>Siguientes pasos 👣</a></li>
-<li><a href=#wayback-machine>Wayback machine ⏰</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href=#los-estilos->Los estilos 💅🏻</a>
+      <ul>
+        <li><a href=#el-layout>El layout</a></li>
+        <li><a href=#style-reset>Style reset</a></li>
+        <li><a href=#web-safe-fonts>Web safe fonts</a></li>
+        <li><a href=#position-sticky>Position sticky</a></li>
+      </ul>
+    </li>
+    <li><a href=#el-amp->El AMP ⚡</a></li>
+    <li><a href=#la-toc-y-posts-relacionados->La TOC y posts relacionados 🔗</a></li>
+    <li><a href=#miscelánea->Miscelánea 🧪</a>
+      <ul>
+        <li><a href=#la-vulnerabilidad-del-target-blank>La vulnerabilidad del target blank</a></li>
+        <li><a href=#bem>BEM</a></li>
+      </ul>
+    </li>
+    <li><a href=#siguientes-pasos->Siguientes pasos 👣</a></li>
+    <li><a href=#wayback-machine->Wayback machine ⏰</a></li>
+  </ul>
 </nav><p></p>
-
-<h2 id=los-estilos>Los estilos 💅🏻</h2>
-
+<h2 id=los-estilos->Los estilos 💅🏻</h2>
 <p>Para bien o para mal este site siempre va a estar diseñado por mí, puedo pedir feedback o tomar inspiración de otros sites, pero estoy orgulloso de poder decir que todo lo que veis es <strong>100% original</strong>.</p>
-
 <p>Ya os habréis dado cuenta de que esto ya tiene otra pinta, atrás han quedado los días de estilos por defecto de navegadores y con tan solo <strong>~100 lineas de Sass</strong> le he dado un rollo más minimalista con un toque de imprenta con el que estoy bastante contento.</p>
-
 <p>Como guía de estilo inicial tomé esta web:</p>
-
 <figure class="figure ">
     
     
     
         
-            <amp-img alt="Inspiración inicial para el estilo del blog" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=742 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_900x0_resize_q75_box.jpg 900w" width=1199><i-amphtml-sizer style=display:block;padding-top:61.8849%;></i-amphtml-sizer>
+            <amp-img alt="Inspiración inicial para el estilo del blog" class="figure__image  i-amphtml-layout-responsive i-amphtml-layout-size-defined" height=742 i-amphtml-layout=responsive layout=responsive src=https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration.jpg srcset="https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_1200x0_resize_q75_box.jpg 1200w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_320x0_resize_q75_box.jpg 320w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_480x0_resize_q75_box.jpg 480w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_640x0_resize_q75_box.jpg 640w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_800x0_resize_q75_box.jpg 800w, https://asur-dev.cdn.ampproject.org/i/s/asur.dev/images/la-primera-iteracion-amp-estilos-y-miscelanea/design-inspiration_hu72054ea50ecaac2c4443105528545737_64833_900x0_resize_q75_box.jpg 900w" width=1199><i-amphtml-sizer style=display:block;padding-top:61.8849%;></i-amphtml-sizer>
             </amp-img>
         
     
 </figure>
-
 <p>Pero me parecía algo sobrecargado y decidí no implementar algunas características, aún así se puede ver que la elección de fuentes y el estilo de los links son muy similares.</p>
-
 <h3 id=el-layout>El layout</h3>
-
 <p>Aquí me he decidido a experimentar, el front no es mi especialidad y últimamente he tenido la impresión que con solo Bootstrap y nociones básicas de CSS me estaba quedando un poco atrás, así que he estado explorando las nuevas opciones de maquetación, que tienen nombre propio, <strong>grid</strong> y <strong>flexbox</strong>.</p>
-
 <p>Por lo que he estado investigando, ambos son intercambiables en muchos casos, con algunas limitaciones aquí y allá, pero la convención que más me ha gustado es el utilizar grid para el layout general y flexbox para colocar los elementos dentro de sus contenedores. Lo que he acabo haciendo sería algo así:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -368,48 +352,50 @@
 <span class=p>}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Una distribución clásica pero efectiva, aunque estoy seguro de que la voy a ir cambiando y extendiendo con el tiempo.</p>
-
 <p><strong>TIP</strong>: Para ver como queda la grid puedes poner el ratón sobre un elemento con <code>display: grid;</code> en el inspector de tu navegador y te pinta una representación del estado actual en tiempo real, muy útil para debuguear.</p>
-
 <h3 id=style-reset>Style reset</h3>
+<p>Hace poco en una newsletter semanal de la empresa que trabajo compartieron un 
 
-<p>Hace poco en una newsletter semanal de la empresa que trabajo compartieron un <a href=https://hankchizljaw.com/wrote/a-modern-css-reset/ target=_top>reset de css</a> que que me ha parecido muy interesante, en el post descompone paso a paso la hoja de estilos y explica porque otras librerías como <code>normalize.css</code> ya no son tan necesarias como hace unos años, cuando los navegadores no estaban tan alineados. Total, que después de pegarle una lectura y personalizarlo un poco lo he decidido añadir al tema.</p>
 
+<a href=https://hankchizljaw.com/wrote/a-modern-css-reset rel="nofollow noopener noreferrer" target=_blank>
+    reset de css
+</a> que que me ha parecido muy interesante, en el post descompone paso a paso la hoja de estilos y explica porque otras librerías como <code>normalize.css</code> ya no son tan necesarias como hace unos años, cuando los navegadores no estaban tan alineados. Total, que después de pegarle una lectura y personalizarlo un poco lo he decidido añadir al tema.</p>
 <h3 id=web-safe-fonts>Web safe fonts</h3>
+<p>Este es un concepto al que he sido introducido hace poco, resulta que, sorpresa, cada vez las webs dependen más de fuentes externas alojadas en servicios como Google Fonts y similares. No me vais a ver echar culpas, que claramente son de la gente de UI (😜), pero ha habido que ponerle solución, y esta viene en forma de <em>
 
-<p>Este es un concepto al que he sido introducido hace poco, resulta que, sorpresa, cada vez las webs dependen más de fuentes externas alojadas en servicios como Google Fonts y similares. No me vais a ver echar culpas, que claramente son de la gente de UI (😜), pero ha habido que ponerle solución, y esta viene en forma de <em><a href=https://www.w3schools.com/cssref/css_websafe_fonts.asp target=_top>fuentes seguras</a></em>, las fuentes que <strong>siempre</strong> vamos a tener disponibles en el navegador.</p>
 
+<a href=https://www.w3schools.com/cssref/css_websafe_fonts.asp rel="nofollow noopener noreferrer" target=_blank>
+    fuentes seguras
+</a></em>, las fuentes que <strong>siempre</strong> vamos a tener disponibles en el navegador.</p>
 <p>En mi humilde opinión se les da poco crédito a estas pobres fuentes, que si son feas, anticuadas, siendo relegadas a meros fallbacks… pues yo he decidido utilizarlas como fuentes principales del tema y no hacer uso de ninguno de los servicios de fuentes mencionados anteriormente.</p>
-
 <p>Las fuentes que he utilizado son:</p>
-
 <ul>
 <li><strong>Helvetica</strong>: Para los títulos.</li>
 <li><strong>Courier New</strong>: Para el texto general y contenido.</li>
 <li><strong>Lucida Console</strong>: Para el código, tanto en bloque como inline.</li>
 <li><strong>Times New Roman</strong>: Para las citas y menciones.</li>
 </ul>
+<p>Creo que el resultado es sublime, al menos desde mi limitado gusto estético, y es que además tiene otra ventaja, no tenemos que descargarnos fuentes, por lo que no vamos a tener que lidiar con el 
 
-<p>Creo que el resultado es sublime, al menos desde mi limitado gusto estético, y es que además tiene otra ventaja, no tenemos que descargarnos fuentes, por lo que no vamos a tener que lidiar con el <a href=https://css-tricks.com/fout-foit-foft/ target=_top>FOUT</a>, lo que mejorará tanto la experiencia de usuario como la velocidad de la web. <em>WIN WIN</em>.</p>
 
+<a href=https://css-tricks.com/fout-foit-foft rel="nofollow noopener noreferrer" target=_blank>
+    FOUT
+</a>, lo que mejorará tanto la experiencia de usuario como la velocidad de la web. <em>WIN WIN</em>.</p>
 <h3 id=position-sticky>Position sticky</h3>
-
 <p>Principalmente gracias a las limitaciones de AMP para incluir javascript he descubierto este nuevo atributo de CSS, y como me parece que mucha gente no lo conoce y sigue usando librerías de terceros para conseguir este mismo efecto he decidido incluirlo en el post.</p>
+<p>Pues sí, al contrario de lo que pensaba, <code>position: relative|absolute|fixed;</code> no son las únicas opciones de posición, resulta que <code>position: sticky</code> existe y de hecho tiene buen 
 
-<p>Pues sí, al contrario de lo que pensaba, <code>position: relative|absolute|fixed;</code> no son las únicas opciones de posición, resulta que <code>position: sticky</code> existe y de hecho tiene buen <a href="https://caniuse.com/#feat=css-sticky" target=_top>soporte en navegadores</a> (<em>fuck you ie11</em>). Lo podéis ver en acción en la tabla de contenidos de la derecha si haceis scroll.</p>
 
+<a href="https://caniuse.com/#feat=css-sticky" rel="nofollow noopener noreferrer" target=_blank>
+    soporte en navegadores
+</a> (<em>fuck you ie11</em>). Lo podéis ver en acción en la tabla de contenidos de la derecha si haceis scroll.</p>
 <p>La mejor explicación que he encontrado por los internetes de como funciona esto es la siguiente:</p>
-
 <blockquote>
 <p><em>Funciona como un position relative hasta que llega a un breakpoint en el que se convierte en un position fixed</em></p>
 </blockquote>
-
 <p>Han dado en el clavo, lo único que nos tenemos que asegurar es que el elemento tiene <em>espacio donde moverse</em>, me explico, el principal problema que suele haber con esta instrucción es que la gente (yo) asigna el mismo tamaño al elemento sticky y al container, como resultado, nuestro elemento se vuelve sticky un gran total de 0px!! ENHORABUENA!! Me tiré un rato con esto, sí.</p>
-
 <p>La implemetación pinta algo así:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt>1
@@ -432,11 +418,8 @@
 <span class=p>&lt;/</span><span class=nt>aside</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Como os comentaba, el elemento <code>aside__wrapper</code> se ajusta al contenido y se puede <em>deslizar</em> por toda la altura del <code>aside</code>.</p>
-
 <p>En el CSS solo tenemos que especificar el tipo de posición y el breakpoint (que dirá en que momento el elemento se vuelve sticky):</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt>1
@@ -453,21 +436,24 @@
 <span class=p>}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
-<h2 id=el-amp>El AMP ⚡</h2>
-
+<h2 id=el-amp->El AMP ⚡</h2>
 <p>La primera persona con la que compartí en primicia la web para que me diese su feedback, en cuanto le echó un vistazo lo primero que me dijo fué:</p>
-
 <blockquote>
 <p><em>¿Por qué AMP?</em> 🤔</p>
 </blockquote>
+<p>Igual se piensa que soy masoquista, pero no, la razón principal es por el <strong>SEO</strong> aunque tampoco voy a negar que me parece un desafío interesante y es una tecnología con la que ya estoy familiariazado, así que he dado los primeros pasos para que esta web sea válida ante Google como una <em>
 
-<p>Igual se piensa que soy masoquista, pero no, la razón principal es por el <strong>SEO</strong> aunque tampoco voy a negar que me parece un desafío interesante y es una tecnología con la que ya estoy familiariazado, así que he dado los primeros pasos para que esta web sea válida ante Google como una <em><a href=https://amp.dev/ target=_top>Accelerated Mobile Page</a></em>.</p>
 
-<p>No me he roto mucho la cabeza con esto al principio, mi objetivo era que pasase la válidación (yo utilizo <a href=https://chrome.google.com/webstore/detail/amp-validator/nmoffdblmcmgeicmolmhobpoocbbmknc target=_top>AMP Validator</a> para las comprobaciones) y como pretendo que sea <strong>AMP nativo</strong> no he tenido que añadir links ni referencias, y así solo desarrollo una versión, que estamos hablando de un blog, no es una web de la NASA.</p>
+<a href=https://amp.dev rel="nofollow noopener noreferrer" target=_blank>
+    Accelerated Mobile Page
+</a></em>.</p>
+<p>No me he roto mucho la cabeza con esto al principio, mi objetivo era que pasase la válidación (yo utilizo 
 
+
+<a href=https://chrome.google.com/webstore/detail/amp-validator/nmoffdblmcmgeicmolmhobpoocbbmknc rel="nofollow noopener noreferrer" target=_blank>
+    AMP Validator
+</a> para las comprobaciones) y como pretendo que sea <strong>AMP nativo</strong> no he tenido que añadir links ni referencias, y así solo desarrollo una versión, que estamos hablando de un blog, no es una web de la NASA.</p>
 <p>Para empezar el primer problema que me encontré es el tener que incrustar los estilos en la cabecera. Me da la impresión de que Hugo, en un principio no esperaba contemplar esta posibilidad, en especial con la llegada de <em>http/2</em>, el <em>package multiplexing</em> y las <em>push directives</em>, pero esto no quiere decir que no sea posible, solo que hay que darle una vuelta extra:</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt>1
@@ -484,11 +470,8 @@
 <span class=p>&lt;/</span><span class=nt>style</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Lo que tenemos que hacer en vez de compilar en resource en un archivo directamente, es leer el contenido de ese archivo, meterlo en un bloque y transformarlo en CSS, puede parecer una tontería visto así, pero la información sobre este procedimiento es escasa o deprecada, así que a lo tonto me ha llevado un buen rato hacerlo funcionar.</p>
-
 <p>Para acabar, como no tengo ningún elemento especial de momento solo he tenido que añadir la tag de HTML el emoji del rayo (⚡) y el script raíz de AMP (la primera vez que le dije a alguien que se podía sustituir el <code>&lt;html amp lang=&#34;es&#34;&gt;</code> por un emoji pensó que le estaba tomando el pelo, pero os juro que es verdad!)</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt>1
@@ -505,15 +488,10 @@
         <span class=p>&lt;</span><span class=nt>script</span> <span class=na>async</span> <span class=na>src</span><span class=o>=</span><span class=s>&#34;https://cdn.ampproject.org/v0.js&#34;</span><span class=p>&gt;&lt;/</span><span class=nt>script</span><span class=p>&gt;</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Después de asegurarnos de que los posts tienen la etiqueta title y un par de validaciones menores más, listo, ya tenemos una página AMP super básica, pero funcional! 🥳</p>
-
-<h2 id=la-toc-y-posts-relacionados>La TOC y posts relacionados 🔗</h2>
-
+<h2 id=la-toc-y-posts-relacionados->La TOC y posts relacionados 🔗</h2>
 <p>Para empezar a meter el pie en las aguas del <em>SEO on-page</em> he implementado las opciones más básicas de interlinking, una tabla de contenidos y una sección de posts relacionados.</p>
-
 <p>Ambos son implementaciones muy directas, ya que están soportados por Hugo de manera nativa (<em>god bless</em>).</p>
-
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -556,46 +534,48 @@
 <span class=cp>{{</span><span class=w> </span><span class=k>end</span><span class=w> </span><span class=cp>}}</span></code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Como podéis ver, esto de programar está mitificado, para añadir la tabla de contenidos solo hay que incluir en la plantilla <code>{{ .TableOfContents }}</code>, Hugo ya detecta por su cuenta los títulos en tu contenido y genera los links.</p>
-
 <p>En cuanto a los contenidos relacionados tenemos que acceder a los elementos related de la página actual <code>$related := .Site.RegularPages.Related .</code> e imprimir lo que nos interese, en nuestro caso el título y la url.</p>
-
 <blockquote>
 <p><em>¿Pero cómo sabe Hugo cuales son los elementos relacionados?</em> 😐</p>
 </blockquote>
+<p>Muy buena pregunta, y la respuesta la verdad es que me ha volado la cabeza… Seguramente pensaseis, como yo, que lo podemos introducir en los metadatos del post al crear el contenido, pero no! Hugo lo detecta automágicamente, y te digo más, puedes 
 
-<p>Muy buena pregunta, y la respuesta la verdad es que me ha volado la cabeza… Seguramente pensaseis, como yo, que lo podemos introducir en los metadatos del post al crear el contenido, pero no! Hugo lo detecta automágicamente, y te digo más, puedes <a href=https://gohugo.io/content-management/related/#configure-related-content target=_top>ajustar el algoritmo</a> a tu gusto! Brutal!</p>
 
-<h2 id=miscelánea>Miscelánea 🧪</h2>
-
+<a href=https://gohugo.io/content-management/related/#configure-related-content rel="nofollow noopener noreferrer" target=_blank>
+    ajustar el algoritmo
+</a> a tu gusto! Brutal!</p>
+<h2 id=miscelánea->Miscelánea 🧪</h2>
 <p>Como miscelánea ha habido un par de cosas que creo que merece la pena comentar.</p>
-
 <h3 id=la-vulnerabilidad-del-target-blank>La vulnerabilidad del target blank</h3>
-
 <p>Un detalle interesante sobre los links del header, a primera vista inofensivos, pueden ser explotados por una vulnerabilidad. Todo esto se debe al atributo <code>target=&#34;_blank&#34;</code>.</p>
-
 <p>Así para resumirlo mucho, si abrimos un link cualquiera que tenga <code>target=&#34;_blank&#34;</code> la web de destino tiene disponible la referencia del origen a través de javascript. Si la web destino fuese maliciosa, podría ejecutar código para, por ejemplo, cambiar la web de origen sin que nos diesemos cuenta:</p>
-<pre><code>opener.location = &#39;kinda.facebok.com&#39;; // phishing rico rico</code></pre>
-<p>Todo esto se puede solucionar muy facilmente añadiendo el atributo <code>rel=&#34;noopener noreferrer&#34;</code> al anchor, de esta manera no pasaremos ninguna referencia a la pestaña de destino. De nada!</p>
-
+<pre><code>opener.location = &#39;kinda.facebok.com&#39;; // phishing rico rico
+</code></pre><p>Todo esto se puede solucionar muy facilmente añadiendo el atributo <code>rel=&#34;noopener noreferrer&#34;</code> al anchor, de esta manera no pasaremos ninguna referencia a la pestaña de destino. De nada!</p>
 <h3 id=bem>BEM</h3>
+<p>Otra de las cosas que nunca he tenido la oportunidad de practicar, la convención de nombres <em>
 
-<p>Otra de las cosas que nunca he tenido la oportunidad de practicar, la convención de nombres <em><a href=http://getbem.com/ target=_top>Block Element Modifier</a></em>, ya habéis podido ver en algunos ejemplos de código más arriba que las clases se llaman <code>.aside__wrapper</code> y cosas así.</p>
 
+<a href=http://getbem.com rel="nofollow noopener noreferrer" target=_blank>
+    Block Element Modifier
+</a></em>, ya habéis podido ver en algunos ejemplos de código más arriba que las clases se llaman <code>.aside__wrapper</code> y cosas así.</p>
 <p>Pues por lo visto esto es algo que les encanta a la gente de frontend, cosa que no entiendo, me parece una nomenclatura bastante verbosa y simplemente <strong>fea de ver</strong>, por no hablar de que ya van 2 veces que hago un push con los identificadores de elemento y modificador intercambiados (la dislexia…), pero lo que si me gusta son las convenciones, y como esto aspira a ser un proyecto que use más gente y resulta estar absurdamente extendido pues me he tenido que subir al carro.</p>
-
-<h2 id=siguientes-pasos>Siguientes pasos 👣</h2>
-
+<h2 id=siguientes-pasos->Siguientes pasos 👣</h2>
 <p>Estoy bastatante contento con la vida que le han dado estos cambios a la web, dicho esto, este viaje no ha hecho más que empezar.</p>
-
 <p>Para la próxima iteración espero poder tener las taxonomías de tags ya hechas con sus listas y todo, Google Analytics y Search Console ya en funcionamiento para ver algunas estadísticas y quizás el highlight de código, así que <em>stay tuned!</em> 😎</p>
+<h2 id=wayback-machine->Wayback machine ⏰</h2>
+<p>Ver la 
 
-<h2 id=wayback-machine>Wayback machine ⏰</h2>
 
-<p>Ver la <a href=https://web.archive.org/web/20191019121743/https://asurbernardo.com/posts/la-primera-iteracion-amp-estilos-y-miscelanea/ target=_top title="Versión original del post">versión original de este post</a>.</p>
+<a href=https://web.archive.org/web/20191019121743/https://asurbernardo.com/posts/la-primera-iteracion-amp-estilos-y-miscelanea rel="nofollow noopener noreferrer" target=_blank title="Versión original del post">
+    versión original de este post
+</a>.</p>
+<p>Ver la 
 
-<p>Ver la <a href=https://web.archive.org/web/20191019121816/https://asurbernardo.com/ target=_top title="Versión original de la homepage">versión original de la homepage</a>.</p>
+
+<a href=https://web.archive.org/web/20191019121816/https://asurbernardo.com rel="nofollow noopener noreferrer" target=_blank title="Versión original de la homepage">
+    versión original de la homepage
+</a>.</p>
 
 
     <h2 class=related-content__title>Lecturas relacionadas 📖</h2>

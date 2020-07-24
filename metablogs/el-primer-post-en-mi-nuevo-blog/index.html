@@ -198,10 +198,7 @@
 </amp-autocomplete></header>
 		<main class=main>
 	<article class=content>
-		
-
-<h1 id=el-primer-post-en-mi-nuevo-blog>El primer post en mi nuevo blog!</h1>
-
+		<h1 id=el-primer-post-en-mi-nuevo-blog>El primer post en mi nuevo blog!</h1>
 <section class=under-title>
     <div class=under-title__info>
         <time datetime=2019-10-14T12:33:32>
@@ -227,69 +224,66 @@
 <amp-social-share aria-label="Compartir en Linkedin" class="social-share__button i-amphtml-layout-fixed i-amphtml-layout-size-defined" height=50 i-amphtml-layout=fixed style=width:50px;height:50px; type=linkedin width=50></amp-social-share>
 <amp-social-share aria-label="Compartir en Pinterest" class="social-share__button i-amphtml-layout-fixed i-amphtml-layout-size-defined" height=50 i-amphtml-layout=fixed style=width:50px;height:50px; type=pinterest width=50></amp-social-share></div>
 </section>
-
 <p>Si, si, ya sé que estás pensando: ¿Que leches es esta web y cómo he llegado aquí? Espera, por favor, dame la oportunidad de explicarme. Me llamo Asur y este es mi nuevo proyecto…</p>
-
-<p><strong>Tabla de contenidos:</strong>
+<p>Tabla de contenidos:
 </p><nav id=TableOfContents>
-<ul>
-<li><a href=#el-primer-post-en-mi-nuevo-blog>El primer post en mi nuevo blog!</a>
-<ul>
-<li><a href=#el-por-qué>El por qué 🤔</a></li>
-<li><a href=#el-cómo>El cómo 💡</a>
-<ul>
-<li><a href=#el-hosting>El hosting</a></li>
-<li><a href=#la-estructura-de-repositorios>La estructura de repositorios</a></li>
-<li><a href=#el-despliegue>El despliegue</a></li>
-</ul></li>
-<li><a href=#siguientes-pasos>Siguientes pasos 👣</a></li>
-<li><a href=#wayback-machine>Wayback Machine ⏰</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href=#el-por-qué->El por qué 🤔</a></li>
+    <li><a href=#el-cómo->El cómo 💡</a>
+      <ul>
+        <li><a href=#el-hosting>El hosting</a></li>
+        <li><a href=#la-estructura-de-repositorios>La estructura de repositorios</a></li>
+        <li><a href=#el-despliegue>El despliegue</a></li>
+      </ul>
+    </li>
+    <li><a href=#siguientes-pasos->Siguientes pasos 👣</a></li>
+    <li><a href=#wayback-machine->Wayback Machine ⏰</a></li>
+  </ul>
 </nav><p></p>
-
 <blockquote>
 <p><em>Pues menuda mierda de nuevo proyecto!</em> 🤣</p>
 </blockquote>
-
 <p>Vale, estamos de acuerdo, pero escucha, la idea es que llegue a ser más que eso y alcance la categoría de pasable, déjame que te cuente cómo.</p>
-
-<h2 id=el-por-qué>El por qué 🤔</h2>
-
+<h2 id=el-por-qué->El por qué 🤔</h2>
 <p>Para empezar, una pequeña presentación para quitarlo de delante, me llamo Asur, no espero que me conozcas pero considero importante que sepas que me encanta programar, en concreto me apasiona todo lo que tenga que ver con internet y este blog es uno de mis periódicos cacharreos tecnológicos.</p>
+<p>Hace ya tiempo que esta idea me ha estado rondando la cabeza, <strong>crear un blog personal el cual documente su propio proceso de desarrollo y mejora!</strong> Mi objetivo es ir desarrollando y plasmar esas mejoras en forma de posts, registrar cada paso en la 
 
-<p>Hace ya tiempo que esta idea me ha estado rondando la cabeza, <strong>crear un blog personal el cual documente su propio proceso de desarrollo y mejora!</strong> Mi objetivo es ir desarrollando y plasmar esas mejoras en forma de posts, registrar cada paso en la <a href=http://web.archive.org/ target=_top>Wayback Machine</a> de <em>archive.org</em> para que cada entrada se pueda visitar en su estado original y poder ver la evolución pieza a pieza.</p>
 
+<a href=http://web.archive.org rel="nofollow noopener noreferrer" target=_blank>
+    Wayback Machine
+</a> de <em>archive.org</em> para que cada entrada se pueda visitar en su estado original y poder ver la evolución pieza a pieza.</p>
 <p>Así pues, la idea es introducir este proyecto al mundo e invitarte a un viaje en el que hablaremos mucho de programación y otros familiares, así que si te gusta el desarrollo web, el SEO, la gestión de sistemas y demás te recomiendo que te mantengas al tanto.</p>
-
-<h2 id=el-cómo>El cómo 💡</h2>
-
+<h2 id=el-cómo->El cómo 💡</h2>
 <p>Para llevar a cabo este proyecto he elegido <strong>GoHugo</strong>, un generador de sites estáticos, al estilo de Jekyll, pero desarrollado en Go. También he creado un tema llamado <strong>amperage</strong>, que será donde iremos haciendo las mejoras y añadiendo funcionalidades.</p>
-
 <p>El proyecto es <strong>100% código abierto</strong>, así que si lo que ves te gusta, que de momento lo dudo, descárgatelo, pruébalo y si estás espléndid@ las aportaciones son siempre bienvenidas.</p>
-
 <p>Todo está hosteado en <strong>Github Pages</strong>, porque es gratis, es fácil, es rápido y… ah si, es <strong>GRATIS</strong>.</p>
-
 <p>He estado trabajando en el workflow de desarrollo y seguramente sea mejorable, pero estoy bastante contento con el estado actual, así que voy a entrar un poco más en detalle de como está montado todo este tinglado.</p>
-
 <h3 id=el-hosting>El hosting</h3>
-
 <p>Este site al ser estático no necesita de mucho en cuanto a infraestructura, lo único que hace es escupir ficheros a tu navegador, lo que lo hace super rápido y sencillo de gestionar, pero como todo, el haber elegido este estilo de web implica ciertas limitaciones, no tener un backend significa que probablemente voy a tener que depender de servicios de terceros para posibles funcionalidades futuras, como comentarios en los posts o una newsletter.</p>
-
 <p>Github pages me parece una opción ideal ya que lo iba a utilizar de todas formas para alojar los repositorios, así que mato dos pájaros de un tiro. Para poner un frontal con CDN, políticas personalizadas, así como mi propio dominio utilizo <strong>Cloudflare</strong>, que de nuevo es gratis (vais captando el patrón aquí?).</p>
-
 <p>La verdad es que lo único que me ha costado averiguar de esta parte es la convención que tiene Github para alojar tu site. Para que la web esté accesible en la url <code>{user}.github.io</code> tienes que crear un repositorio que se llame igual y esa es tu única opción, si no te gusta, pues bailas.</p>
-
 <h3 id=la-estructura-de-repositorios>La estructura de repositorios</h3>
-
 <p>Este proyecto va a estar organizado en tres repositorios:</p>
-
 <ul>
-<li><a href=https://github.com/asurbernardo/blog target=_top>Blog</a>: Todo el contenido del blog, con sus posts escritos en markdown y sus metadatos.</li>
-<li><a href=https://github.com/asurbernardo/amperage target=_top>Tema</a>: El tema que he llamado amperage, donde estarán los estilos y la estructura básica de la web. Aquí es donde se va a llevar a cabo la mayor parte del desarrollo.</li>
-<li><a href=https://github.com/asurbernardo/asurbernardo.github.io target=_top>Build</a>: El contenido una vez ha sido compilado en HTML estático, esta es la parte que se hostea y estás leyendo ahora mismo.</li>
-</ul>
+<li>
 
+
+<a href=https://github.com/asurbernardo/blog rel="nofollow noopener noreferrer" target=_blank>
+    Blog
+</a>: Todo el contenido del blog, con sus posts escritos en markdown y sus metadatos.</li>
+<li>
+
+
+<a href=https://github.com/asurbernardo/amperage rel="nofollow noopener noreferrer" target=_blank>
+    Tema
+</a>: El tema que he llamado amperage, donde estarán los estilos y la estructura básica de la web. Aquí es donde se va a llevar a cabo la mayor parte del desarrollo.</li>
+<li>
+
+
+<a href=https://github.com/asurbernardo/asurbernardo.github.io rel="nofollow noopener noreferrer" target=_blank>
+    Build
+</a>: El contenido una vez ha sido compilado en HTML estático, esta es la parte que se hostea y estás leyendo ahora mismo.</li>
+</ul>
 <p>A la hora de trabajar solo usaré un directorio, el repositorio de blog, pero los otros dos estarán configurados como submódulos de git, de esta manera la estructura de trabajo quedaría algo así:</p>
 <pre><code>blog
 ├── archetypes
@@ -304,15 +298,17 @@
 ├── resources
 ├── static
 └── themes
-    └── amperage // Submódulo de tema</code></pre>
-<p>Todas las actualizaciones se subirán independientemente y a la hora de empezar a trabajar en un entorno nuevo solo necesitaré clonar el repositorio y descargar sus submódulos, lo que considero bastante cómodo, algo así:</p>
-<pre><code>git clone git@github.com:asurbernardo/blog.git &amp;&amp; git submodule update --recursive --remote</code></pre>
-<p>Por supuesto esto también aplica para alguién que quiera aportar su granito de arena al proyecto.</p>
-
+    └── amperage // Submódulo de tema
+</code></pre><p>Todas las actualizaciones se subirán independientemente y a la hora de empezar a trabajar en un entorno nuevo solo necesitaré clonar el repositorio y descargar sus submódulos, lo que considero bastante cómodo, algo así:</p>
+<pre><code>git clone git@github.com:asurbernardo/blog.git &amp;&amp; git submodule update --recursive --remote
+</code></pre><p>Por supuesto esto también aplica para alguién que quiera aportar su granito de arena al proyecto.</p>
 <h3 id=el-despliegue>El despliegue</h3>
+<p>Para desplegar la web de manera rápida y sencilla he creado un script siguiendo la 
 
-<p>Para desplegar la web de manera rápida y sencilla he creado un script siguiendo la <a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script target=_top>documentación oficial</a> de Hugo:</p>
 
+<a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script rel="nofollow noopener noreferrer" target=_blank>
+    documentación oficial
+</a> de Hugo:</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tbody><tr><td class=lntd>
 <pre class=chroma><code><span class=lnt> 1
@@ -369,24 +365,26 @@ git commit -m <span class=s2>&#34;</span><span class=nv>$msg</span><span class=s
 git push origin master</code></pre></td></tr></tbody></table>
 </div>
 </div>
-
 <p>Una vez configurado todo en tu cuenta de Github solo tenemos que compilar el blog con <code>hugo -t amperage</code> y pusheamos los cambios en el submódulo de <code>/public</code> con un mensaje autogenerado a partir de la fecha.</p>
-
-<h2 id=siguientes-pasos>Siguientes pasos 👣</h2>
-
+<h2 id=siguientes-pasos->Siguientes pasos 👣</h2>
 <p>De momento eso es todo, espero traer más novedades pronto, y también espero que estén relacionadas con algún estilo básico, porque creeme que el estado actual de la web me duele más a mí que a ti…</p>
-
 <blockquote>
 <p><em>Lo dudo mucho!</em>  😒</p>
 </blockquote>
-
 <p>Bueno, pues eso, que hasta la próxima!</p>
+<h2 id=wayback-machine->Wayback Machine ⏰</h2>
+<p>Ver la 
 
-<h2 id=wayback-machine>Wayback Machine ⏰</h2>
 
-<p>Ver la <a href=http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog/ target=_top title="Versión original del post">versión original de este post</a>.</p>
+<a href=http://web.archive.org/web/20191014123731/https://asurbernardo.com/posts/el-primer-post-en-mi-nuevo-blog rel="nofollow noopener noreferrer" target=_blank title="Versión original del post">
+    versión original de este post
+</a>.</p>
+<p>Ver la 
 
-<p>Ver la <a href=http://web.archive.org/web/20191014123830/https://asurbernardo.com/ target=_top title="Versión original de la homepage">versión original de la homepage</a>.</p>
+
+<a href=http://web.archive.org/web/20191014123830/https://asurbernardo.com rel="nofollow noopener noreferrer" target=_blank title="Versión original de la homepage">
+    versión original de la homepage
+</a>.</p>
 
 
     <section class=author>

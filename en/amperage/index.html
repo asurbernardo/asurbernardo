@@ -8,11 +8,14 @@
         
     
 </style><title>Amperages</title><link href=https://asur.dev/en/amperage/ rel=canonical><link href=https://asur.dev/sitemap.xml rel=sitemap type=application/xml><link href=https://asur.dev/manifest.json rel=manifest><link href=https://asur.dev/icons/apple-touch-icon.png rel=apple-touch-icon sizes=180x180></head><body>
-		
-			
-				<amp-auto-ads class=i-amphtml-layout-container data-ad-client=ca-pub-8268925024957381 i-amphtml-layout=container type=adsense></amp-auto-ads>
-			
-		<amp-install-serviceworker class=i-amphtml-layout-nodisplay data-iframe-src=https://asur.dev/install-sw.html hidden=hidden i-amphtml-layout=nodisplay layout=nodisplay src=https://asur.dev/sw.js>
+    
+        <amp-auto-ads class=i-amphtml-layout-container data-ad-client=ca-pub-8268925024957381 i-amphtml-layout=container type=adsense>
+            <script type=application/json>
+                {"placements":[{"anchor":{"selector":"ARTICLE.content","sub":{"all":true,"selector":"P"}},"pos":4,"type":1}]}
+            </script>
+        </amp-auto-ads>
+    
+<amp-install-serviceworker class=i-amphtml-layout-nodisplay data-iframe-src=https://asur.dev/install-sw.html hidden=hidden i-amphtml-layout=nodisplay layout=nodisplay src=https://asur.dev/sw.js>
 </amp-install-serviceworker>
   <amp-analytics class="i-amphtml-layout-fixed i-amphtml-layout-size-defined" data-credentials=include i-amphtml-layout=fixed style=width:1px;height:1px; type=gtag>
     <script type=application/json>
@@ -23,12 +26,7 @@
             "UA-128498798-1": { "groups": "default" }
           }
         },
-        "triggers": {
-          "trackPageview": {
-            "on": "visible",
-            "request": "pageview"
-          }
-        }
+        "triggers": {"trackPageview":{"on":"visible","request":"pageview"}}
       }
     </script>
   </amp-analytics>

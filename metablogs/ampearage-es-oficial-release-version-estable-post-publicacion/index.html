@@ -225,8 +225,8 @@
 <p>No sé si te has enterado pero Amperage es oficialmente un tema de Hugo! La semana pasada fué añadido a la web the themes.hugo.io e incluso me han mencionado en su cuenta de twitter:</p>
 <p></p>
 <p>Como puedes imaginar me hace muchísima ilusión, ya que <strong>este ha sido mi primer proyecto Open Source que ha llegado a su fase final!</strong></p>
-<p>Tabla de contenidos:
-</p><nav id=TableOfContents>
+<strong>Tabla de contenidos:</strong>
+<nav id=TableOfContents>
   <ul>
     <li><a href=#primera-versión-estable>Primera versión estable</a></li>
     <li><a href=#nuevas-features->Nuevas features! 🥳</a>
@@ -240,7 +240,7 @@
     <li><a href=#y-ahora-qué->¿Y ahora qué? 🤔</a></li>
     <li><a href=#wayback-machine->Wayback machine ⏰</a></li>
   </ul>
-</nav><p></p>
+</nav>
 <h2 id=primera-versión-estable>Primera versión estable</h2>
 <p>Hace nada me han abierto 
 
@@ -313,10 +313,27 @@
 <p>No dejan de ser tarjetas de colores pero su cometido es romper el flujo de lectura para hacerlo menos pesado.</p>
 <p>A diferencia de los productos aquí si se puede utilizar markdown dentro de los shortcodes, lo que los hace bastante más polivalentes.</p>
 <p>Mira, un ejemplo:</p>
+<div class="post-it  post-it--info ">
+	 <div class=post-it__title> 💡 Sabías qué... </div>
+	<div class=post-it__content>
+		<p>En la mitología griega, <em>Niké</em> (en griego, Νίκη) es la diosa de la victoria. Algunos datos random:</p>
+<ul>
+<li>
+<p>Se la representaba a menudo como una pequeña escultura alada.</p>
+</li>
+<li>
+<p>Su imagen adorna el frontal de los Rolls Royce.</p>
+</li>
+<li>
+<p>Según la leyenda fué la última palabra que pronunció Filípides trás correr la primera maratón para anunciar la victoria ateniense contra los persas.</p>
+</li>
+<li>
+<p>La palabra fué registrada en 1964 por una marca de calzado estadounidense que seguro que te suena vagamente…</p>
+</li>
+</ul>
 
-<pre><code>&lt;/div&gt;
-</code></pre>
-
+	</div>
+</div>
 <p>¿Ves? ¿A que funciona bastante bien?</p>
 <p>He hecho que aceptasen un parámetro <code>type</code> que puede ser: <code>tip</code>, <code>warning</code>, <code>danger</code> e <code>info</code>, con fondo azul, amarillo, rojo y azul respectivamente.</p>
 <p>Además se les puede añadir un <code>title</code> que aparecerá en grande en la parte superior.</p>
@@ -331,11 +348,11 @@
 </span><span class=lnt>5
 </span></code></pre></td>
 <td class=lntd>
-<pre class=chroma><code class=language-md data-lang=md>{{% post-it type=&#34;info&#34; title=&#34;¿Sabías qué...? 💡 &#34; %}}
+<pre class=chroma><code class=language-md data-lang=md>{{<span class=p>&lt;</span> <span class=nt>post-it</span> <span class=na>type</span><span class=o>=</span><span class=s>&#34;info&#34;</span> <span class=na>title</span><span class=o>=</span><span class=s>&#34;¿Sabías qué...? 💡 &#34;</span> <span class=p>&gt;</span>}}
 
 El texto iría aquí...
 
-{{% / post-it %}}</code></pre></td></tr></tbody></table>
+{{<span class=p>&lt;</span> <span class=p>/</span> <span class=nt>post-it</span> <span class=p>&gt;</span>}}</code></pre></td></tr></tbody></table>
 </div>
 </div>
 <h3 id=etiquetas-hreflang-configurables>Etiquetas hreflang configurables</h3>

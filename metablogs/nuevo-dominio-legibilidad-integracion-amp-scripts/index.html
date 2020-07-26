@@ -223,8 +223,8 @@
 <amp-social-share aria-label="Compartir en Pinterest" class="social-share__button i-amphtml-layout-fixed i-amphtml-layout-size-defined" height=50 i-amphtml-layout=fixed style=width:50px;height:50px; type=pinterest width=50></amp-social-share></div>
 </section>
 <p>Un nuevo lavado de cara del blog, no solo visual, sino que <strong>he cambiado el dominio!</strong> Atrás quedan los días de <strong>asurbernardo.com</strong>, un dominio largo y dificil de recordar, el nuevo dominio es <strong>asur.dev</strong>, algo mejor eh? Ah, y también he mejorado algunas cosas de <strong>AMP</strong> y alguna miscelanea, pero que bonito mi nuevo dominio…</p>
-<p>Tabla de contenidos:
-</p><nav id=TableOfContents>
+<strong>Tabla de contenidos:</strong>
+<nav id=TableOfContents>
   <ul>
     <li><a href=#nuevo-dominio->Nuevo dominio! 🌍</a></li>
     <li><a href=#mejora-del-layout->Mejora del layout 🧩</a>
@@ -247,7 +247,7 @@
     <li><a href=#siguientes-pasos->Siguientes pasos 👣</a></li>
     <li><a href=#wayback-machine->Wayback Machine ⏰</a></li>
   </ul>
-</nav><p></p>
+</nav>
 <h2 id=nuevo-dominio->Nuevo dominio! 🌍</h2>
 <p>Este proceso ha sido un poco tedioso, he tenido que ser cuidadoso y seguir varios pasos en un orden estricto para evitar que se desindexasen páginas!</p>
 <blockquote>
@@ -333,7 +333,7 @@
 <h2 id=mejora-del-layout->Mejora del layout 🧩</h2>
 <p>Con el objetivo de mejorar la lectura en todas las plataformas y aplicar un poco el paradigma de <em>mobile first</em> he simplificado la distribución.</p>
 <p>El primer cambio y el más evidente es la eliminación de la columna sticky derecha en desktop (RIP <code>display:sticky</code> 😔). Esto hace que en mobile, que es un ~25% del tráfico, no se mueva la tabla de contenidos al final de la página, donde pierde su función. La tabla de contenidos se ha movido dentro del propio contenido, debajo de la introducción y los posts relacionados al final, por si se quiere seguir leyendo, mejor UX en general en mi opinión!</p>
-<p>El segundo es mover el autor y las tags debajo del título. Para conseguir meter estos datos y tabla de contenidos dentro del cuerpo del artículo hay que hacer un workaround en Hugo, ya que no es HTML, es markdown, por lo que hay que crear un shortcode como <code>{{% toc %}}</code> en tu carpeta <code>layouts &gt; shortcodes &gt; toc.html</code> y usarlo donde lo veas preciso dentro del post. Esto conyeva que hay que meter estos shortcodes manualmente cuando se redacta el post pero también puedes elegir si incluirlos o no, lo que da flexibilidad.</p>
+<p>El segundo es mover el autor y las tags debajo del título. Para conseguir meter estos datos y tabla de contenidos dentro del cuerpo del artículo hay que hacer un workaround en Hugo, ya que no es HTML, es markdown, por lo que hay que crear un shortcode como <code>{{&lt; toc &gt;}}</code> en tu carpeta <code>layouts &gt; shortcodes &gt; toc.html</code> y usarlo donde lo veas preciso dentro del post. Esto conyeva que hay que meter estos shortcodes manualmente cuando se redacta el post pero también puedes elegir si incluirlos o no, lo que da flexibilidad.</p>
 <h3 id=nuevo-logo>Nuevo logo</h3>
 <p>El último cambio es la creación de un logo. No tengo ni idea de diseño entonces lo único que he hecho es abrir 
 

@@ -234,16 +234,21 @@
 <p>Pues sí, pero eso no quita que mucha gente las siga utilizando para ganarse la vida mediante el trading.</p>
 <p>La verdad es que en la mayoría de los casos, nosotros, los mortales, no tenemos las habilidades necesarias para conseguirlo, ya sea por un exceso de <em>trading emocional</em> o por falta de conocimientos del mercado y de análisis técnico.</p>
 <p>¡Trading bots al rescate! Estos programas se encargan de observar los mercados y ejecutar compras y ventas automáticas basándose en una estrategia que tu les proporcionas.</p>
-
-<p>Tabla de contenidos:
-</p><nav id=TableOfContents>
+<div class="post-it  post-it--tip ">
+	 <div class=post-it__title>Disclaimer 🚨</div>
+	<div class=post-it__content>
+		Ten en cuenta que si ejecutas tu trading bot en producción te arriegas a perder dinero ¡Procede con precaución! 😬
+	</div>
+</div>
+<strong>Tabla de contenidos:</strong>
+<nav id=TableOfContents>
   <ul>
     <li><a href=#la-plataforma-gekko>La plataforma Gekko</a></li>
     <li><a href=#desplegar-en-una-raspberry-pi>Desplegar en una Raspberry Pi</a></li>
     <li><a href=#cómo-utilizar-gekko>Cómo utilizar Gekko</a></li>
     <li><a href=#y-ahora-qué>¿Y ahora qué?</a></li>
   </ul>
-</nav><p></p>
+</nav>
 <h2 id=la-plataforma-gekko>La plataforma Gekko</h2>
 <p>Gekko es un proyecto open source disponible en GitHub. Está escrito en NodeJS y es tanto un <em>Bitcoin Trading Bot</em> como una plataforma para hacer <em>backtesting</em>.</p>
 <p>Hay varias cosas que me han hecho decantarme por esta plataforma:</p>
@@ -261,12 +266,12 @@
 </a>, pero está en Inglés.</p>
 <h2 id=desplegar-en-una-raspberry-pi>Desplegar en una Raspberry Pi</h2>
 <p>Resulta que la idea de este proyecto me surgió investigando usos interesantes que se le podía dar a una Raspberry Pi, una de ellas era hostear un trading bot… 🤔</p>
-
-<pre><code>&lt;div class=&#34;post-it__content&#34;&gt;
-    Estas instrucciones no se limitan a solo una Raspberry, solo necesitas una distribución de Linux basada en Debian, así que también puedes hacerlo en un VPS como &lt;!-- raw HTML omitted --&gt;Linode&lt;!-- raw HTML omitted --&gt;, la idea es que siempre esté online.
-&lt;/div&gt;
-</code></pre>
-
+<div class="post-it  post-it--tip ">
+	
+	<div class=post-it__content>
+		Estas instrucciones no se limitan a solo una Raspberry, solo necesitas una distribución de Linux basada en Debian, así que también puedes hacerlo en un VPS como Linode, la idea es que siempre esté online.
+	</div>
+</div>
 <p>Me voy a saltar toda la parte de instalar de cero Raspian y conectarte por SSH, doy por sentado que si tienes una Raspy por casa alguna que otra vez ya te habrás visto en esta situación.</p>
 <p><strong>¡Vamos a ello!</strong></p>
 <p>Al buscar guías de instalación en la documentación nos encontramos con varias opciones, para un servidor Linux, para un PC con Windows… ¡y <strong>Docker</strong>! Bueno, está claro el camino que vamos a tomar ¿no? 🐋</p>
